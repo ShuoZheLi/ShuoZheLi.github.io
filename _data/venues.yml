@@ -1,0 +1,25 @@
+# Badge colors for the venue abbreviations (abbr field in papers.bib).
+"NeurIPS":
+  color: "#5b3fa3"
+"ICLR":
+  color: "#1f6f8b"
+"ICLR-W":
+  color: "#3d8fa8"
+"ICML":
+  color: "#2a6f3e"
+"ACL":
+  color: "#b03a2e"
+"COLM":
+  color: "#7a4f9a"
+"ICRA":
+  color: "#2b4c7e"
+"SSRR":
+  color: "#4a6b8a"
+"CoNEXT":
+  color: "#8a5a2b"
+"MobiHoc":
+  color: "#6b6b2b"
+"Preprint":
+  color: "#6c757d"
+"arXiv":
+  color: "#9b2335"

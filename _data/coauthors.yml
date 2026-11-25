@@ -1,0 +1,17 @@
+# Links for co-author names in the publication list.
+# Keys are lowercase last names; firstname lists the spellings used in papers.bib.
+"zhang":
+  - firstname: ["Amy"]
+    url: https://www.ece.utexas.edu/people/faculty/amy-zhang
+
+"liu":
+  - firstname: ["Leqi"]
+    url: https://leqiliu.github.io/
+
+"stone":
+  - firstname: ["Peter"]
+    url: https://www.cs.utexas.edu/~pstone/
+
+"qiu":
+  - firstname: ["Lili"]
+    url: https://www.cs.utexas.edu/~lili/

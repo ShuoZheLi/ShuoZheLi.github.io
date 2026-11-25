@@ -1,0 +1,24 @@
+# Rendered on the home page under "community service" (see _layouts/about.liquid).
+# Each group is printed as "category: item, item, ...". Items may contain HTML links.
+- category: Reviewer
+  items:
+    - ICML
+    - ICLR
+    - NeurIPS
+    - CVPR
+    - RLC
+    - COLM
+    - TMLR
+    - IEEE TNNLS
+    - Machine Learning Research
+    - IJITDM
+    - PeerJ
+- category: Teaching Assistant
+  items:
+    - Reinforcement Learning, UT Austin (designed the policy-gradient and actor-critic assignments and autograders)
+- category: Course Designer
+  items:
+    - Gateway to Robotics, UT Austin (PID control and forward/inverse kinematics assignments with autograders)
+- category: Outreach
+  items:
+    - RoboCup with UT Austin Villa (RoboCup 2023, world top 5)

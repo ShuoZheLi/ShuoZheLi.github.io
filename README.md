@@ -1,1 +1,71 @@
-# github.io is under maintain
+# shuozheli.github.io
+
+Source of [shuozheli.github.io](https://shuozheli.github.io), built with the
+[al-folio](https://github.com/alshedivat/al-folio) Jekyll template (v1.x, gem-based).
+
+## How it is deployed
+
+Pushing to `main` runs `.github/workflows/deploy.yml`, which builds the site with Jekyll and
+pushes the result to the `gh-pages` branch. GitHub Pages must serve that branch:
+**Settings → Pages → Build and deployment → Source: Deploy from a branch → `gh-pages` / `(root)`**.
+
+## Where things live
+
+| What                         | File                                                                 |
+| ---------------------------- | -------------------------------------------------------------------- |
+| Bio, research summary        | `_pages/about.md`                                                    |
+| News items                   | `_news/*.md` (one file per item, `inline: true`)                     |
+| Publications                 | `_bibliography/papers.bib` (file order = display order)              |
+| Paper animations             | `assets/img/publication_preview/*.svg` (`preview = {name.svg}`)      |
+| Highlighted papers           | `selected = {true}` in `papers.bib` (home page + "Highlights" filter)|
+| Publication filter topics    | `topics = {reasoning efficiency rl finance sensing}` in `papers.bib` |
+| Community service            | `_data/service.yml`                                                  |
+| CV page                      | `_data/cv.yml`                                                       |
+| Social links                 | `_data/socials.yml`                                                  |
+| Venue badge colors           | `_data/venues.yml`                                                   |
+| Co-author links              | `_data/coauthors.yml`                                                |
+| Site settings                | `_config.yml`                                                        |
+
+Local overrides of the theme: `_layouts/bib.liquid` (publication row with animation),
+`_layouts/about.liquid` (home page sections), `_includes/pub_styles.liquid`, `_includes/pub_filter.liquid`.
+
+### Adding a paper
+
+```bibtex
+@inproceedings{key2027,
+  abbr      = {ICML},
+  title     = {Title},
+  author    = {Li*, Shuozhe and Coauthor*, Name and Zhang, Amy},
+  booktitle = {International Conference on Machine Learning (ICML)},
+  year      = {2027},
+  arxiv     = {xxxx.xxxxx},
+  selected  = {true},          % highlight it (optional)
+  preview   = {key2027.svg},   % animation or image in assets/img/publication_preview/ (optional)
+  topics    = {reasoning},
+  tldr      = {One-sentence summary.},
+  abstract  = {...},
+  bibtex_show = {true},
+}
+```
+
+### Adding news
+
+Create `_news/2027-01-15-something.md`:
+
+```markdown
+---
+layout: post
+date: 2027-01-15
+inline: true
+related_posts: false
+---
+
+Our paper X was accepted to Y!
+```
+
+## Local preview
+
+```bash
+bundle install
+bundle exec jekyll serve   # http://localhost:4000
+```

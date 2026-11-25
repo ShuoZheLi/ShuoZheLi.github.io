@@ -1,0 +1,168 @@
+# CV data in RenderCV format, rendered by the al_folio_cv plugin on /cv/.
+cv:
+  name: Shuozhe Li
+  label: Ph.D. Student in Computer Science, The University of Texas at Austin
+  email: shuozhe.li@utexas.edu
+  location: Austin, TX
+  website: https://shuozheli.github.io
+  summary: >
+    I work on reinforcement learning for large language models, toward capable, reliable, and efficient reasoning:
+    learning from scarce outcome feedback, preserving reliability beyond accuracy, and adapting reasoning models to
+    deployment constraints.
+
+  sections:
+    Education:
+      - institution: The University of Texas at Austin
+        location: Austin, TX
+        area: Computer Science
+        studyType: "M.S. (2026), Ph.D. (expected 2027)"
+        start_date: 2022
+        end_date: 2027
+        highlights:
+          - "GPA: 3.93/4.0"
+          - Supported by Open Philanthropy and the Wesley W. Calhoun, Jr. Endowed Scholarship
+          - Advised by Prof. Amy Zhang and Prof. Leqi Liu
+
+      - institution: The University of Texas at Austin
+        location: Austin, TX
+        area: Computer Science
+        studyType: B.S.
+        start_date: 2018
+        end_date: 2022
+        highlights:
+          - "GPA: 3.93/4.0; graduated with Honors and Research Distinction"
+          - Dean's List (top 4% of the class), 2018–2022
+          - Undergraduate Researcher Scholarship, 2019–2021
+          - Advised by Prof. Lili Qiu
+
+    Experience:
+      - company: MIDI Lab and HUMAIN Lab, The University of Texas at Austin
+        position: Graduate Researcher (advisors Prof. Amy Zhang and Prof. Leqi Liu)
+        location: Austin, TX
+        start_date: 2023
+        summary: Reinforcement learning methods for foundation models and robots.
+
+      - company: Honda Research Institute USA
+        position: Student Associate
+        location: San Jose, CA
+        start_date: 2025-09
+        end_date: 2025-12
+        highlights:
+          - Designed a reinforcement-learning-based self-play framework in which the model generates corrupted intermediate reasoning and learns to detect, diagnose, and repair its own errors, strengthening post-training self-reflection and off-trajectory recoverability.
+          - Developed a pollution–recovery training loop that jointly optimizes self-pollution and self-correction, so the model learns both to create challenging perturbations and to reconstruct correct reasoning from them.
+
+      - company: Robot Interactive Intelligence (RobIn) Lab, The University of Texas at Austin
+        position: Researcher (advisor Prof. Roberto Martín-Martín)
+        location: Austin, TX
+        start_date: 2022
+        end_date: 2023
+        summary: Sim-to-real reinforcement learning methods for robot manipulators.
+
+      - company: Learning Agents Research Group, The University of Texas at Austin
+        position: Researcher (advisor Prof. Peter Stone)
+        location: Austin, TX
+        start_date: 2022
+        end_date: 2022
+        summary: Robot navigation in crowded public spaces with reinforcement learning (summer 2022).
+
+      - company: Wireless Lab, Wireless Networking and Communications Group, The University of Texas at Austin
+        position: Undergraduate Researcher (advisor Prof. Lili Qiu)
+        location: Austin, TX
+        start_date: 2019
+        end_date: 2022
+        summary: Simultaneous localization and mapping (SLAM) with RFID and mmWave sensing.
+
+      - company: Hauoli
+        position: Team Lead, Mobile App Development
+        location: Austin, TX
+        start_date: 2020-05
+        end_date: 2020-08
+        highlights:
+          - Designed a multi-threaded streaming algorithm that improved speed estimation from users' location information by 50% when many users are within network range.
+          - Engineered a hybrid decentralized network protocol combining Bluetooth Low Energy and acoustic communication with AIMD-based congestion control, supporting up to 1,000 users with centimeter-level distance measurement and real-time updates.
+
+    Publications:
+      - title: "Prune What the Teacher Can Repair: Distillation-Aware Pruning for LLMs"
+        publisher: Preprint
+        releaseDate: 2026
+        summary: "**Shuozhe Li**, Shuhang Tan, Radoslav Ivanov, Leqi Liu, Amy Zhang"
+      - title: Learning Robust Reasoning through Guided Adversarial Self-Play
+        publisher: NeurIPS 2026
+        releaseDate: 2026
+        url: https://arxiv.org/abs/2602.00173
+        summary: "**Shuozhe Li**, Vaishnav Tadiparthi, Kwonjoon Lee, Nakul Agarwal, Hossein Nourkhiz Mahjoub, Ehsan Moradi Pari, Lizhang Chen, Amy Zhang, Leqi Liu"
+      - title: "CARE-RFT: Confidence-Anchored Reinforcement Finetuning for Reliable Reasoning in Large Language Models"
+        publisher: arXiv preprint
+        releaseDate: 2026
+        url: https://arxiv.org/abs/2602.00085
+        summary: "**Shuozhe Li**, Jincheng Cao, Bodun Hu, Aryan Mokhtari, Leqi Liu, Amy Zhang"
+      - title: φ-Balancing for Mixture-of-Experts Training
+        publisher: ICML 2026
+        releaseDate: 2026
+        url: https://proceedings.mlr.press/v306/chen26br.html
+        summary: "Lizhang Chen, Jonathan Li, Qi Wang, Runlong Liao, **Shuozhe Li**, Chen Liang, Ni Lao, Qiang Liu"
+      - title: "Filtered Reasoning Score: Evaluating Reasoning Quality on a Model's Most-Confident Traces"
+        publisher: COLM 2026
+        releaseDate: 2026
+        url: https://arxiv.org/abs/2604.11996
+        summary: "Manas Pathak, Xingyao Chen, **Shuozhe Li**, Amy Zhang, Leqi Liu"
+      - title: A Learnable Wavelet Transformer for Long-Short Equity Trading and Risk-Adjusted Return Optimization
+        publisher: ICLR 2026 Workshops (TSALM and FinAI)
+        releaseDate: 2026
+        url: https://arxiv.org/abs/2601.13435
+        summary: "**Shuozhe Li\\***, Du Cheng\\*, Amy Zhang, Leqi Liu"
+      - title: "ExPO: Unlocking Hard Reasoning with Self-Explanation-Guided Reinforcement Learning"
+        publisher: NeurIPS 2025
+        releaseDate: 2025
+        url: https://arxiv.org/abs/2507.02834
+        summary: "Ruiyang Zhou\\*, **Shuozhe Li\\***, Amy Zhang, Leqi Liu\\*"
+      - title: "StitchLLM: Serving LLMs, One Block at a Time"
+        publisher: ACL 2025
+        releaseDate: 2025
+        url: https://aclanthology.org/2025.acl-long.1305/
+        summary: "Bodun Hu\\*, **Shuozhe Li\\***, Saurabh Agarwal, Myungjin Lee, Akshay Jajoo, Jiamin Li, Le Xu, Geon-Woo Kim, Donghyun Kim, Hong Xu, Amy Zhang, Aditya Akella"
+      - title: An Optimal Discriminator Weighted Imitation Perspective for Reinforcement Learning (Iterative Dual-RL)
+        publisher: ICLR 2025
+        releaseDate: 2025
+        url: https://arxiv.org/abs/2504.13368
+        summary: "Haoran Xu\\*, **Shuozhe Li\\***, Harshit Sikchi, Scott Niekum, Amy Zhang"
+      - title: Transformer Based Time-Series Forecasting for Stock
+        publisher: arXiv preprint
+        releaseDate: 2025
+        url: https://arxiv.org/abs/2502.09625
+        summary: "**Shuozhe Li\\***, Zachery B. Schulwolf\\*, Risto Miikkulainen"
+      - title: "VIGOR: Reviving Cloud Gaming Sessions"
+        publisher: Proceedings of the ACM on Networking (CoNEXT 2024)
+        releaseDate: 2024
+        url: https://doi.org/10.1145/3696403
+        summary: "Zhaoyuan He\\*, Yifan Yang\\*, **Shuozhe Li**, Lili Qiu, Diyuan Dai, Yuqing Yang"
+      - title: "Robot Air Hockey: A Manipulation Testbed for Robot Learning with Reinforcement Learning"
+        publisher: ICRA 2024
+        releaseDate: 2024
+        url: https://arxiv.org/abs/2405.03113
+        summary: "Caleb Chuck\\*, Carl Qi\\*, Michael J. Munje\\*, **Shuozhe Li\\***, Max Rudolph\\*, Chang Shi\\*, Siddhant Agarwal\\*, Harshit Sikchi\\*, Abhinav Peri, Sarthak Dayal, Evan Kuo, Kavan Mehta, Anthony Wang, Peter Stone, Amy Zhang, Scott Niekum"
+      - title: "Rapid Contact Adaptation: Sim-to-Real Mechanism for Contact-Rich Manipulation"
+        publisher: Manuscript
+        releaseDate: 2023
+        summary: "**Shuozhe Li**, Roberto Martín-Martín, Amy Zhang"
+      - title: "DynaBARN: Benchmarking Metric Ground Navigation in Dynamic Environments"
+        publisher: IEEE SSRR 2022
+        releaseDate: 2022
+        url: https://cs.gmu.edu/~xiao/Research/DynaBARN/DynaBARN.html
+        summary: "Anirudh Nair, Fulin Jiang, Kang Hou, Zifan Xu, **Shuozhe Li**, Xuesu Xiao, Peter Stone"
+      - title: Rotation Sensing Using Passive RFID Tags
+        publisher: ACM MobiHoc 2021
+        releaseDate: 2021
+        url: https://doi.org/10.1145/3466772.3467036
+        summary: "Swadhin Pradhan, **Shuozhe Li**, Lili Qiu"
+
+    Teaching:
+      - bullet: "**Teaching Assistant**, Reinforcement Learning, UT Austin: designed the policy-gradient and actor-critic assignments and autograders; led in-class discussions and help sessions for coding assignments and exam preparation."
+      - bullet: "**Course Designer**, Gateway to Robotics, UT Austin: designed the PID-controller and forward/inverse-kinematics hands-on assignments with autograders, and a linear-algebra-for-robotics homework set."
+
+    Academic Projects:
+      - bullet: "**Human-Guided LLMs for Efficient and Secure Smart Home Automation**: a streaming human-in-the-loop deep RL framework that adapts LLM behavior to user preferences, with personalized reward modeling and real-time user feedback."
+
+    Service:
+      - bullet: "**Reviewer**: ICML, ICLR, NeurIPS, CVPR, RLC, COLM, TMLR, IEEE TNNLS, Machine Learning Research, IJITDM, PeerJ"
+      - bullet: "**RoboCup**: UT Austin Villa (RoboCup 2023, world top 5)"

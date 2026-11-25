@@ -1,0 +1,452 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> publications | Shuozhe Li </title> <meta name="author" content="Shuozhe Li"> <meta name="description" content="Shuozhe Li is a Ph.D. student in Computer Science at The University of Texas at Austin working on reinforcement learning for capable, reliable, and efficient reasoning in large language models. "> <meta name="keywords" content="Shuozhe Li, reinforcement learning, large language models, LLM reasoning, RLHF, offline RL, UT Austin"> <meta property="og:site_name" content="Shuozhe Li"> <meta property="og:type" content="website"> <meta property="og:title" content="Shuozhe Li | publications"> <meta property="og:url" content="https://shuozheli.github.io/publications/"> <meta property="og:description" content="Shuozhe Li is a Ph.D. student in Computer Science at The University of Texas at Austin working on reinforcement learning for capable, reliable, and efficient reasoning in large language models. "> <meta property="og:image" content="https://shuozheli.github.io/assets/img/prof_pic.jpg"> <meta property="og:locale" content="en"> <meta name="twitter:card" content="summary"> <meta name="twitter:title" content="publications"> <meta name="twitter:description" content="Shuozhe Li is a Ph.D. student in Computer Science at The University of Texas at Austin working on reinforcement learning for capable, reliable, and efficient reasoning in large language models. "> <meta name="twitter:image" content="https://shuozheli.github.io/assets/img/prof_pic.jpg"> <script type="application/ld+json">
+    {
+        "author":
+        {
+            "@type": "Person",
+            "name": "Shuozhe Li"
+        },
+        "url": "https://shuozheli.github.io/publications/",
+        "@type": "WebSite",
+        "description": "Shuozhe Li is a Ph.D. student in Computer Science at The University of Texas at Austin working on reinforcement learning for capable, reliable, and efficient reasoning in large language models.
+",
+        "headline": "publications",
+        
+        "sameAs": ["https://scholar.google.com/citations?user=EAth38AAAAAJ","https://github.com/ShuoZheLi"],
+        
+        "name": "Shuozhe Li",
+        "@context": "https://schema.org"
+    }
+  </script> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 1000px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%A7%A0&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://shuozheli.github.io/publications/"> <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Shuozhe</span> Li </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item active"> <a class="nav-link" href="/publications/">publications <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">CV </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">publications</h1> <p class="post-description"></p> </header> <article> <style>
+  /* ---------- highlight colors ---------- */
+  :root {
+    --pub-highlight-bg: #fff8e6;
+    --pub-highlight-border: #f0d9a8;
+    --pub-chip-bg: rgba(0, 0, 0, 0.04);
+  }
+  html[data-theme="dark"] {
+    --pub-highlight-bg: rgba(255, 196, 87, 0.07);
+    --pub-highlight-border: rgba(255, 196, 87, 0.25);
+    --pub-chip-bg: rgba(255, 255, 255, 0.06);
+  }
+  /* ---------- publication rows ---------- */
+  .publications ol.bibliography > li {
+    margin-bottom: 0.9rem;
+  }
+  .pub-entry {
+    display: flex;
+    gap: 1.25rem;
+    align-items: flex-start;
+    padding: 0.85rem 0.9rem;
+    border-radius: 10px;
+    border: 1px solid transparent;
+  }
+  .pub-entry.pub-highlight {
+    background: var(--pub-highlight-bg);
+    border-color: var(--pub-highlight-border);
+  }
+  .pub-media {
+    flex: 0 0 40%;
+    max-width: 40%;
+  }
+  .pub-media a {
+    display: block;
+    border-bottom: none !important;
+  }
+  .pub-media img.pub-anim {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+    background: #fff;
+  }
+  .pub-badge-col {
+    flex: 0 0 112px;
+    max-width: 112px;
+    text-align: center;
+    padding-top: 0.15rem;
+  }
+  .pub-badge-col .pub-venue-badge {
+    display: block;
+    width: 100%;
+  }
+  .pub-body {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+  .pub-body .title {
+    font-weight: 700;
+    font-size: 1.02rem;
+    line-height: 1.35;
+    margin-bottom: 0.25rem;
+  }
+  .pub-body .title a {
+    color: var(--global-text-color);
+  }
+  .pub-body .title a:hover {
+    color: var(--global-theme-color);
+    text-decoration: none;
+  }
+  .pub-body .author {
+    font-size: 0.92rem;
+    margin-bottom: 0.2rem;
+  }
+  .pub-body .author em.self {
+    font-style: normal;
+    font-weight: 700;
+    border-bottom: none;
+  }
+  .pub-body .author .more-authors {
+    color: var(--global-text-color-light);
+    border-bottom: 1px dashed var(--global-text-color-light);
+    cursor: pointer;
+  }
+  .pub-body .periodical {
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+  }
+  .pub-venue-badge {
+    display: inline-block;
+    font-size: 0.74rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: #fff;
+    background-color: var(--global-theme-color);
+    padding: 0.12rem 0.5rem;
+    border-radius: 4px;
+    margin-right: 0.35rem;
+    vertical-align: 1px;
+    white-space: nowrap;
+  }
+  .pub-venue-note {
+    color: var(--global-highlight-color);
+    font-weight: 600;
+    margin-left: 0.3rem;
+  }
+  .pub-tldr {
+    font-size: 0.88rem;
+    line-height: 1.45;
+    color: var(--global-text-color-light);
+    margin-bottom: 0.35rem;
+  }
+  .pub-body .links a.btn {
+    font-size: 0.75rem;
+    padding: 0.12rem 0.6rem !important;
+    margin: 0.15rem 0.2rem 0.15rem 0;
+    border-radius: 4px;
+  }
+  .pub-body .hidden.open {
+    margin-top: 0.4rem;
+  }
+  /* ---------- filter chips ---------- */
+  .pub-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    align-items: center;
+    margin: 0.4rem 0 1.1rem 0;
+  }
+  .pub-filter .pub-filter-label {
+    font-size: 0.85rem;
+    color: var(--global-text-color-light);
+    margin-right: 0.2rem;
+  }
+  .pub-filter button {
+    font-size: 0.85rem;
+    line-height: 1.2;
+    padding: 0.32rem 0.8rem;
+    border-radius: 999px;
+    border: 1px solid var(--global-divider-color);
+    background: var(--pub-chip-bg);
+    color: var(--global-text-color);
+    cursor: pointer;
+  }
+  .pub-filter button:hover {
+    border-color: var(--global-theme-color);
+    color: var(--global-theme-color);
+  }
+  .pub-filter button[aria-pressed="true"] {
+    background: var(--global-theme-color);
+    border-color: var(--global-theme-color);
+    color: #fff;
+  }
+  .pub-legend {
+    font-size: 0.85rem;
+    color: var(--global-text-color-light);
+    margin-bottom: 0.5rem;
+  }
+  .pub-empty {
+    display: none;
+    color: var(--global-text-color-light);
+    font-style: italic;
+  }
+  /* ---------- home page sections ---------- */
+  .home-section-title {
+    margin-top: 2.2rem;
+  }
+  .research-thrusts {
+    padding-left: 1.2rem;
+  }
+  .research-thrusts li {
+    margin-bottom: 0.4rem;
+  }
+  .service-list {
+    padding-left: 1.2rem;
+  }
+  .service-list li {
+    margin-bottom: 0.3rem;
+  }
+  @media (max-width: 640px) {
+    .pub-entry {
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+    .pub-media,
+    .pub-badge-col {
+      flex: none;
+      max-width: 100%;
+      width: 100%;
+    }
+    .pub-badge-col {
+      text-align: left;
+    }
+    .pub-badge-col .pub-venue-badge {
+      display: inline-block;
+      width: auto;
+    }
+  }
+</style> <div class="pub-filter" role="toolbar" aria-label="Filter publications by topic"> <span class="pub-filter-label">Show:</span> <button type="button" data-filter="highlight" aria-pressed="true">Highlights</button> <button type="button" data-filter="reasoning" aria-pressed="false">LLM Reasoning &amp; RL</button> <button type="button" data-filter="efficiency" aria-pressed="false">Efficient LLMs</button> <button type="button" data-filter="rl" aria-pressed="false">Offline RL &amp; Robotics</button> <button type="button" data-filter="finance" aria-pressed="false">Financial Time Series</button> <button type="button" data-filter="sensing" aria-pressed="false">Networking &amp; Sensing</button> <button type="button" data-filter="all" aria-pressed="false">All</button> </div> <p class="pub-legend"> Highlighted papers have a tinted background and an animation of their core method (click an animation to open it full size). * denotes equal contribution. Also see <a href="https://scholar.google.com/citations?user=EAth38AAAAAJ&amp;hl=en" rel="external nofollow noopener" target="_blank">Google Scholar</a>. </p> <div class="publications"> <ol class="bibliography"> <li> <div class="pub-entry pub-highlight has-media" data-topics="efficiency" data-highlight="1"> <div class="pub-media"> <a href="/assets/img/publication_preview/dap.svg" target="_blank" rel="noopener" title="Open the animation in a new tab"> <img class="pub-anim" src="/assets/img/publication_preview/dap.svg" alt="Animation: conventional pruning removes the weights with the smallest immediate damage D, while DAP removes the weights with the smallest irrecoverable damage D minus R, where R is the part the teacher can repair through distillation; after distillation the DAP student retains less damage." loading="lazy" decoding="async"> </a> </div> <div class="pub-body" id="li2026dap"> <div class="title"> Prune What the Teacher Can Repair: Distillation-Aware Pruning for LLMs </div> <div class="author"> <em class="self">Shuozhe Li</em>, Shuhang Tan, Radoslav Ivanov, <a href="https://leqiliu.github.io/" rel="external nofollow noopener" target="_blank">Leqi Liu</a>, <a href="https://www.ece.utexas.edu/people/faculty/amy-zhang" rel="external nofollow noopener" target="_blank">Amy Zhang</a> </div> <div class="periodical"> <span class="pub-venue-badge" style="background-color: #6c757d">Preprint 2026</span> </div> <div class="pub-tldr">Prune for post-distillation quality: remove the weights whose damage the intended teacher can repair (rank by D − R), rather than those with the least immediate damage.</div> <div class="links"> <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="abstract hidden"> <p>This paper proposes a novel Distillation-Aware Pruning (DAP) framework for addressing the teacher–student compatibility issue in large language models (LLMs). Unlike existing approaches to teacher–student mismatch, which typically assume a predefined student and subsequently adapt the distillation objective to bridge the resulting gap, we revisit the student construction problem through pruning, which provides a natural mechanism for preserving parameters and representations from its parent teacher. Motivated by this intuition, DAP therefore prunes for post-distillation quality rather than immediate post-pruning quality by preserving what the intended distillation process cannot recover and removing what it can repair. Across settings on Qwen3-8B and DeepSeek-R1-Distill-Llama-8B, multiple tasks, and both supervised and on-policy distillation, DAP consistently produces stronger post-distillation students than both independently constructed and conventionally pruned alternatives under matched parameter and training budgets.</p> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">li2026dap</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Prune What the Teacher Can Repair: Distillation-Aware Pruning for LLMs}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Li, Shuozhe and Tan, Shuhang and Ivanov, Radoslav and Liu, Leqi and Zhang, Amy}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Preprint}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2026}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="pub-entry pub-highlight has-media" data-topics="reasoning" data-highlight="1"> <div class="pub-media"> <a href="/assets/img/publication_preview/gasp.svg" target="_blank" rel="noopener" title="Open the animation in a new tab"> <img class="pub-anim" src="/assets/img/publication_preview/gasp.svg" alt="Animation: a single model acts as a polluter that corrupts a window of a correct reasoning trace and as an agent that must detect and repair the corruption to reach the right answer; self-generated repairs are imitated as in-distribution guidance." loading="lazy" decoding="async"> </a> </div> <div class="pub-body" id="li2026gasp"> <div class="title"> <a href="https://arxiv.org/abs/2602.00173" rel="external nofollow noopener" target="_blank">Learning Robust Reasoning through Guided Adversarial Self-Play</a> </div> <div class="author"> <em class="self">Shuozhe Li</em>, Vaishnav Tadiparthi, Kwonjoon Lee, Nakul Agarwal, Hossein Nourkhiz Mahjoub, Ehsan Moradi Pari, Lizhang Chen, <a href="https://www.ece.utexas.edu/people/faculty/amy-zhang" rel="external nofollow noopener" target="_blank">Amy Zhang</a>, <a href="https://leqiliu.github.io/" rel="external nofollow noopener" target="_blank">Leqi Liu</a> </div> <div class="periodical"> <span class="pub-venue-badge" style="background-color: #5b3fa3">NeurIPS 2026</span> <em>Advances in Neural Information Processing Systems (NeurIPS)</em> </div> <div class="pub-tldr">One model plays two roles: a polluter that corrupts its own reasoning and an agent that learns to detect and repair the corruption, with in-distribution self-generated repairs to overcome the scarcity of successful recoveries.</div> <div class="links"> <a href="https://arxiv.org/abs/2602.00173" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a> <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="abstract hidden"> <p>Reinforcement learning from verifiable rewards (RLVR) produces strong reasoning models, yet they can fail catastrophically when the conditioning context is fallible (e.g., corrupted chain-of-thought, misleading partial solutions, or mild input perturbations), since standard RLVR optimizes final-answer correctness only under clean conditioning. We introduce GASP (Guided Adversarial Self-Play), a robustification method that explicitly trains detect-and-repair capabilities using only outcome verification. Without human labels or external teachers, GASP forms an adversarial self-play game within a single model: a polluter learns to induce failure via locally coherent corruptions, while an agent learns to diagnose and recover under the same corrupted conditioning. To address the scarcity of successful recoveries early in training, we propose in-distribution repair guidance, an imitation term on self-generated repairs that increases recovery probability while preserving previously acquired capabilities. Across four open-weight models (1.5B–8B), GASP transforms strong-but-brittle reasoners into robust ones that withstand misleading and perturbed context while often improving clean accuracy. Further analysis shows that adversarial corruptions induce an effective curriculum, and in-distribution guidance enables rapid recovery learning with minimal representational drift.</p> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">li2026gasp</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Learning Robust Reasoning through Guided Adversarial Self-Play}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Li, Shuozhe and Tadiparthi, Vaishnav and Lee, Kwonjoon and Agarwal, Nakul and Mahjoub, Hossein Nourkhiz and Moradi Pari, Ehsan and Chen, Lizhang and Zhang, Amy and Liu, Leqi}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Advances in Neural Information Processing Systems (NeurIPS)}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2026}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="pub-entry pub-highlight has-media" data-topics="reasoning" data-highlight="1"> <div class="pub-media"> <a href="/assets/img/publication_preview/care_rft.svg" target="_blank" rel="noopener" title="Open the animation in a new tab"> <img class="pub-anim" src="/assets/img/publication_preview/care_rft.svg" alt="Animation: the penalty coefficient of reverse KL grows without bound as a token’s probability rises above the reference, while CARE-RFT’s skew reverse KL caps it at log(1/alpha) and keeps the unbounded penalty against probability depletion; under reinforcement finetuning, no KL over-sharpens, reverse KL suppresses the reward-aligned token, and CARE-RFT lets it grow while keeping the rest of the distribution." loading="lazy" decoding="async"> </a> </div> <div class="pub-body" id="li2026carerft"> <div class="title"> <a href="https://arxiv.org/abs/2602.00085" rel="external nofollow noopener" target="_blank">CARE-RFT: Confidence-Anchored Reinforcement Finetuning for Reliable Reasoning in Large Language Models</a> </div> <div class="author"> <em class="self">Shuozhe Li</em>, Jincheng Cao, Bodun Hu, Aryan Mokhtari, <a href="https://leqiliu.github.io/" rel="external nofollow noopener" target="_blank">Leqi Liu</a>, <a href="https://www.ece.utexas.edu/people/faculty/amy-zhang" rel="external nofollow noopener" target="_blank">Amy Zhang</a> </div> <div class="periodical"> <span class="pub-venue-badge" style="background-color: #6c757d">Preprint 2026</span> <em>arXiv preprint arXiv:2602.00085</em> </div> <div class="pub-tldr">A drop-in replacement for the reverse-KL penalty: skew reverse KL caps the penalty on reward-aligned probability increases but keeps resisting probability depletion, retaining the reasoning gains of unconstrained RFT with calibration close to the base model.</div> <div class="links"> <a href="https://arxiv.org/abs/2602.00085" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a> <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="abstract hidden"> <p>Reinforcement finetuning (RFT) has become a central paradigm for eliciting reasoning capabilities in large language models, but it introduces a fundamental tension between capability and trustworthiness. We show that unconstrained RFT improves reasoning accuracy, but also increases hallucination and miscalibration by overly sharpening token distributions. Reverse KL (RKL) regularization alleviates this problem, but it also over-penalizes low-probability yet reward-aligned deviations, limiting reasoning gains. We propose CARE-RFT (Confidence-Anchored Regularized Reinforcement Finetuning), a drop-in replacement for standard KL regularization that introduces a direction-sensitive divergence via skew reverse KL. Unlike standard KL regularization, CARE-RFT uses a one-sided bounded constraint: it caps the penalty on reward-aligned probability increases while keeping the penalty for downward deviations unbounded. Across multiple model scales and RFT algorithms, CARE-RFT consistently matches the reasoning performance of unconstrained RFT while substantially reducing hallucination and maintaining calibration close to the base model.</p> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">li2026carerft</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{CARE-RFT: Confidence-Anchored Reinforcement Finetuning for Reliable Reasoning in Large Language Models}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Li, Shuozhe and Cao, Jincheng and Hu, Bodun and Mokhtari, Aryan and Liu, Leqi and Zhang, Amy}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{arXiv preprint arXiv:2602.00085}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2026}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="pub-entry pub-highlight has-media" data-topics="reasoning" data-highlight="1"> <div class="pub-media"> <a href="/assets/img/publication_preview/expo.svg" target="_blank" rel="noopener" title="Open the animation in a new tab"> <img class="pub-anim" src="/assets/img/publication_preview/expo.svg" alt="Animation: on a hard problem all of the model’s own samples are wrong, so GRPO gets no signal; an expert chain-of-thought is correct but far out in the tail of the policy; ExPO conditions on the ground-truth answer to generate a self-explanation that is both likely under the policy and correct, and training on it shifts the policy toward correct reasoning." loading="lazy" decoding="async"> </a> </div> <div class="pub-body" id="zhou2025expo"> <div class="title"> <a href="https://arxiv.org/abs/2507.02834" rel="external nofollow noopener" target="_blank">ExPO: Unlocking Hard Reasoning with Self-Explanation-Guided Reinforcement Learning</a> </div> <div class="author"> Ruiyang Zhou<sup>*</sup>, <em class="self">Shuozhe Li<sup>*</sup></em>, <a href="https://www.ece.utexas.edu/people/faculty/amy-zhang" rel="external nofollow noopener" target="_blank">Amy Zhang</a>, <a href="https://leqiliu.github.io/" rel="external nofollow noopener" target="_blank">Leqi Liu<sup>*</sup></a> </div> <div class="periodical"> <span class="pub-venue-badge" style="background-color: #5b3fa3">NeurIPS 2025</span> <em>Advances in Neural Information Processing Systems (NeurIPS)</em> </div> <div class="pub-tldr">When the model cannot yet solve a problem, let it explain the known answer: self-explanations conditioned on the ground truth are in-distribution positive samples that unlock learning where GRPO receives no signal and expert CoTs are too far off-policy.</div> <div class="links"> <a href="https://arxiv.org/abs/2507.02834" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a> <a href="https://github.com/HumainLab/ExPO_rl_reasoning_by_explanation" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a> <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="abstract hidden"> <p>Self-improvement via RL often fails on complex reasoning tasks because GRPO-style post-training methods rely on the model’s initial ability to generate positive samples. Without guided exploration, these approaches merely reinforce what the model already knows (distribution-sharpening) rather than enabling the model to solve problems where it initially generates no correct solutions. To unlock reasoning ability in such settings, the model must explore new reasoning trajectories beyond its current output distribution. Such exploration requires access to sufficiently good positive samples to guide the learning. While expert demonstrations seem like a natural solution, we find that they are often ineffective in RL post-training. Instead, we identify two key properties of effective positive samples: they should (1) be likely under the current policy, and (2) increase the model’s likelihood of predicting the correct answer. Based on these insights, we propose Self-Explanation Policy Optimization (ExPO), a simple and modular framework that generates such samples by conditioning on the ground-truth answer. It can be integrated with popular RL training methods like GRPO and DPO. ExPO enables efficient exploration and guides the model to produce reasoning trajectories more aligned with its policy than expert-written CoTs, while ensuring higher quality than its own (incorrect) samples. Experiments show that ExPO improves both learning efficiency and final performance on reasoning benchmarks, surpassing expert-demonstration-based methods in challenging settings such as MATH level-5, where the model initially struggles the most.</p> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">zhou2025expo</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{ExPO: Unlocking Hard Reasoning with Self-Explanation-Guided Reinforcement Learning}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Zhou, Ruiyang and Li, Shuozhe and Zhang, Amy and Liu, Leqi}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Advances in Neural Information Processing Systems (NeurIPS)}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2025}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="pub-entry pub-highlight has-media" data-topics="efficiency" data-highlight="1"> <div class="pub-media"> <a href="/assets/img/publication_preview/stitchllm.svg" target="_blank" rel="noopener" title="Open the animation in a new tab"> <img class="pub-anim" src="/assets/img/publication_preview/stitchllm.svg" alt="Animation: a request flows through the bottom decoder blocks of a large LLM, a trained stitching layer that maps the hidden size, and the top blocks of a smaller LLM; as load rises the scheduler moves the stitch point to configurations that fit the memory budget, trading accuracy gradually instead of jumping between model sizes." loading="lazy" decoding="async"> </a> </div> <div class="pub-body" id="hu2025stitchllm"> <div class="title"> <a href="https://aclanthology.org/2025.acl-long.1305/" rel="external nofollow noopener" target="_blank">StitchLLM: Serving LLMs, One Block at a Time</a> </div> <div class="author"> Bodun Hu<sup>*</sup>, <em class="self">Shuozhe Li<sup>*</sup></em>, Saurabh Agarwal, Myungjin Lee, Akshay Jajoo, Jiamin Li, Le Xu, Geon-Woo Kim, Donghyun Kim, Hong Xu, and <span class="more-authors" title="click to view 2 more authors" data-show="Amy Zhang, Aditya Akella" data-hide="2 more authors" onclick="this.textContent = (this.textContent === this.dataset.hide) ? this.dataset.show : this.dataset.hide;">2 more authors</span> </div> <div class="periodical"> <span class="pub-venue-badge" style="background-color: #b03a2e">ACL 2025</span> <em>Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (ACL)</em> </div> <div class="pub-tldr">Serve LLMs at block granularity: bottom blocks of a large model are stitched to top blocks of a smaller one through a lightweight trained layer, giving fine-grained accuracy–throughput trade-offs under bursty load.</div> <div class="links"> <a href="https://aclanthology.org/2025.acl-long.1305/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper</a> <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="abstract hidden"> <p>The rapid evolution of large language models (LLMs) has revolutionized natural language processing (NLP) tasks such as text generation, translation, and comprehension. However, the increasing computational demands and inference costs of these models present significant challenges. This study investigates the dynamic and efficient utilization of pre-trained weights from open-sourced LLMs of varying parameter sizes to achieve an optimal balance between computational efficiency and task performance. Drawing inspiration from the dual-process theory of human cognition, we introduce StitchLLM: a dynamic model routing framework that employs a powerful bottom model to process all queries, and uses a lightweight routing mechanism to allocate computational resources appropriately. Our novel framework optimizes efficiency and maintains performance, leveraging a trainable stitching layer for seamless integration of decoder layers across different LLMs. Experimental results demonstrate that StitchLLM improves system throughput while minimizing performance degradation, offering a flexible solution for deploying LLMs in resource-constrained settings.</p> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">hu2025stitchllm</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{StitchLLM: Serving LLMs, One Block at a Time}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Hu, Bodun and Li, Shuozhe and Agarwal, Saurabh and Lee, Myungjin and Jajoo, Akshay and Li, Jiamin and Xu, Le and Kim, Geon-Woo and Kim, Donghyun and Xu, Hong and Zhang, Amy and Akella, Aditya}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (ACL)}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{26887--26903}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2025}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.18653/v1/2025.acl-long.1305}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="pub-entry pub-highlight has-media" data-topics="rl" data-highlight="1"> <div class="pub-media"> <a href="/assets/img/publication_preview/idrl.svg" target="_blank" rel="noopener" title="Open the animation in a new tab"> <img class="pub-anim" src="/assets/img/publication_preview/idrl.svg" alt="Animation: in a grid world, an offline dataset contains many suboptimal transitions; Iterative Dual-RL learns the corrected visitation ratio, removes zero-weight transitions, repeats on the remaining sub-dataset, and finally behavior-clones the expert-like transitions that lead from start to goal." loading="lazy" decoding="async"> </a> </div> <div class="pub-body" id="xu2025idrl"> <div class="title"> <a href="https://arxiv.org/abs/2504.13368" rel="external nofollow noopener" target="_blank">An Optimal Discriminator Weighted Imitation Perspective for Reinforcement Learning</a> </div> <div class="author"> Haoran Xu<sup>*</sup>, <em class="self">Shuozhe Li<sup>*</sup></em>, Harshit Sikchi, Scott Niekum, <a href="https://www.ece.utexas.edu/people/faculty/amy-zhang" rel="external nofollow noopener" target="_blank">Amy Zhang</a> </div> <div class="periodical"> <span class="pub-venue-badge" style="background-color: #1f6f8b">ICLR 2025</span> <em>International Conference on Learning Representations (ICLR)</em> </div> <div class="pub-tldr">Iterative Dual-RL (IDRL): offline RL as optimal discriminator-weighted imitation. Correct Dual-RL to estimate the state-action visitation ratio, iteratively drop zero-weight transitions, and behavior-clone the expert-like subset that remains.</div> <div class="links"> <a href="https://arxiv.org/abs/2504.13368" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a> <a href="https://ryanxhr.github.io/IDRL/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Website</a> <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="abstract hidden"> <p>We introduce Iterative Dual Reinforcement Learning (IDRL), a new method that takes an optimal discriminator-weighted imitation view of solving RL. Our method is motivated by a simple experiment in which we find training a discriminator using the offline dataset plus an additional expert dataset and then performing discriminator-weighted behavior cloning gives strong results on various types of datasets. That optimal discriminator weight is quite similar to the learned visitation distribution ratio in Dual-RL, however, we find that current Dual-RL methods do not correctly estimate that ratio. In IDRL, we propose a correction method to iteratively approach the optimal visitation distribution ratio in the offline dataset given no additional expert dataset. During each iteration, IDRL removes zero-weight suboptimal transitions using the learned ratio from the previous iteration and runs Dual-RL on the remaining subdataset. This can be seen as replacing the behavior visitation distribution with the optimized visitation distribution from the previous iteration, which theoretically gives a curriculum of improved visitation distribution ratios that are closer to the optimal discriminator weight. We verify the effectiveness of IDRL on various kinds of offline datasets, including D4RL datasets and more realistic corrupted demonstrations. IDRL beats strong Primal-RL and Dual-RL baselines in terms of both performance and stability, on all datasets.</p> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">xu2025idrl</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{An Optimal Discriminator Weighted Imitation Perspective for Reinforcement Learning}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Xu, Haoran and Li, Shuozhe and Sikchi, Harshit and Niekum, Scott and Zhang, Amy}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{International Conference on Learning Representations (ICLR)}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2025}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="pub-entry pub-highlight has-media" data-topics="finance" data-highlight="1"> <div class="pub-media"> <a href="/assets/img/publication_preview/wavelsformer.svg" target="_blank" rel="noopener" title="Open the animation in a new tab"> <img class="pub-anim" src="/assets/img/publication_preview/wavelsformer.svg" alt="Animation: noisy hourly returns pass through a learnable low-pass and high-pass filter bank; low-guided high-frequency injection uses attention computed from the low-frequency branch to add gated high-frequency cues; a Transformer outputs a long or short position trained directly on a risk-aware trading objective." loading="lazy" decoding="async"> </a> </div> <div class="pub-body" id="li2026wavelsformer"> <div class="title"> <a href="https://arxiv.org/abs/2601.13435" rel="external nofollow noopener" target="_blank">A Learnable Wavelet Transformer for Long-Short Equity Trading and Risk-Adjusted Return Optimization</a> </div> <div class="author"> <em class="self">Shuozhe Li<sup>*</sup></em>, Du Cheng<sup>*</sup>, <a href="https://www.ece.utexas.edu/people/faculty/amy-zhang" rel="external nofollow noopener" target="_blank">Amy Zhang</a>, <a href="https://leqiliu.github.io/" rel="external nofollow noopener" target="_blank">Leqi Liu</a> </div> <div class="periodical"> <span class="pub-venue-badge" style="background-color: #3d8fa8">ICLR-W 2026</span> <em>ICLR 2026 Workshops (TSALM and FinAI)</em> </div> <div class="pub-tldr">WaveLSFormer: a learnable wavelet front-end splits returns into low/high-frequency bands, low-guided attention injects high-frequency cues, and the model is trained end-to-end on a risk-aware trading objective instead of a forecasting loss.</div> <div class="links"> <a href="https://arxiv.org/abs/2601.13435" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a> <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="abstract hidden"> <p>Learning profitable intraday trading policies from financial time series is challenging due to heavy noise, non-stationarity, and strong cross-sectional dependence among related assets. We propose WaveLSFormer, a learnable wavelet-based long-short Transformer that jointly performs multi-scale decomposition and return-oriented decision learning. Unlike standard time-series forecasting that optimizes prediction error and typically requires a separate position-sizing or portfolio-construction step, our model directly outputs a market-neutral long/short portfolio and is trained end-to-end on a trading objective with risk-aware regularization. Specifically, a learnable wavelet front-end generates low-/high-frequency components via an end-to-end trained filter bank, guided by spectral regularizers that encourage stable and well-separated frequency bands. To fuse multi-scale information, we introduce a low-guided high-frequency injection (LGHI) module that refines low-frequency representations with high-frequency cues while controlling training stability. The model outputs a portfolio of long/short positions that is rescaled to satisfy a fixed risk budget and is optimized directly with a trading objective and risk-aware regularization. Extensive experiments on five years of hourly data across six industry groups, evaluated over ten random seeds, demonstrate that WaveLSFormer consistently outperforms MLP, LSTM and Transformer backbones, with and without fixed discrete wavelet front-ends. On average in all industries, WaveLSFormer achieves a cumulative overall strategy return of 0.607 ± 0.045 and a Sharpe ratio of 2.157 ± 0.166, substantially improving both profitability and risk-adjusted returns over the strongest baselines.</p> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">li2026wavelsformer</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{A Learnable Wavelet Transformer for Long-Short Equity Trading and Risk-Adjusted Return Optimization}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Li, Shuozhe and Cheng, Du and Zhang, Amy and Liu, Leqi}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{ICLR 2026 Workshops (TSALM and FinAI)}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2026}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="pub-entry pub-highlight has-media" data-topics="finance" data-highlight="1"> <div class="pub-media"> <a href="/assets/img/publication_preview/stockformer.svg" target="_blank" rel="noopener" title="Open the animation in a new tab"> <img class="pub-anim" src="/assets/img/publication_preview/stockformer.svg" alt="Animation: hourly returns of several correlated stocks in one industry enter a sliding window, a 1D-CNN embeds each time step, an encoder with ProbSparse attention and distilling halves the sequence layer by layer, and the model outputs a long or short position for the target stock trained with a profit-based loss." loading="lazy" decoding="async"> </a> </div> <div class="pub-body" id="li2025stockformer"> <div class="title"> <a href="https://arxiv.org/abs/2502.09625" rel="external nofollow noopener" target="_blank">Transformer Based Time-Series Forecasting for Stock</a> </div> <div class="author"> <em class="self">Shuozhe Li<sup>*</sup></em>, Zachery B. Schulwolf<sup>*</sup>, Risto Miikkulainen</div> <div class="periodical"> <span class="pub-venue-badge" style="background-color: #9b2335">arXiv 2025</span> <em>arXiv preprint arXiv:2502.09625</em> </div> <div class="pub-tldr">Stockformer: a multivariate Transformer over correlated stocks in one industry, with 1D-CNN token embeddings, ProbSparse attention with self-attention distilling, and profit-aligned direction/tanh trading losses.</div> <div class="links"> <a href="https://arxiv.org/abs/2502.09625" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a> <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="abstract hidden"> <p>To the naked eye, stock prices are considered chaotic, dynamic, and unpredictable. Indeed, it is one of the most difficult forecasting tasks that hundreds of millions of retail traders and professional traders around the world try to do every second even before the market opens. With recent advances in the development of machine learning and the amount of data the market generated over years, applying machine learning techniques such as deep learning neural networks is unavoidable. In this work, we modeled the task as a multivariate forecasting problem, instead of a naive autoregression problem. The multivariate analysis is done using the attention mechanism via applying a mutated version of the Transformer, Stockformer, which we created.</p> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">li2025stockformer</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Transformer Based Time-Series Forecasting for Stock}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Li, Shuozhe and Schulwolf, Zachery B. and Miikkulainen, Risto}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{arXiv preprint arXiv:2502.09625}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2025}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="pub-entry" data-topics="efficiency" data-highlight="0"> <div class="pub-badge-col"> <span class="pub-venue-badge" style="background-color: #2a6f3e">ICML</span> </div> <div class="pub-body" id="chen2026phibalancing"> <div class="title"> <a href="https://proceedings.mlr.press/v306/chen26br.html" rel="external nofollow noopener" target="_blank">φ-Balancing for Mixture-of-Experts Training</a> </div> <div class="author"> Lizhang Chen, Jonathan Li, Qi Wang, Runlong Liao, <em class="self">Shuozhe Li</em>, Chen Liang, Ni Lao, Qiang Liu</div> <div class="periodical"> <em>Proceedings of the 43rd International Conference on Machine Learning (ICML)</em>, 2026 </div> <div class="links"> <a href="https://proceedings.mlr.press/v306/chen26br.html" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper</a> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">chen2026phibalancing</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{φ-Balancing for Mixture-of-Experts Training}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Chen, Lizhang and Li, Jonathan and Wang, Qi and Liao, Runlong and Li, Shuozhe and Liang, Chen and Lao, Ni and Liu, Qiang}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Proceedings of the 43rd International Conference on Machine Learning (ICML)}</span><span class="p">,</span>
+  <span class="na">series</span> <span class="p">=</span> <span class="s">{PMLR}</span><span class="p">,</span>
+  <span class="na">volume</span> <span class="p">=</span> <span class="s">{306}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{15228--15245}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2026}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="pub-entry" data-topics="reasoning" data-highlight="0"> <div class="pub-badge-col"> <span class="pub-venue-badge" style="background-color: #7a4f9a">COLM</span> </div> <div class="pub-body" id="pathak2026frs"> <div class="title"> <a href="https://arxiv.org/abs/2604.11996" rel="external nofollow noopener" target="_blank">Filtered Reasoning Score: Evaluating Reasoning Quality on a Model’s Most-Confident Traces</a> </div> <div class="author"> Manas Pathak, Xingyao Chen, <em class="self">Shuozhe Li</em>, <a href="https://www.ece.utexas.edu/people/faculty/amy-zhang" rel="external nofollow noopener" target="_blank">Amy Zhang</a>, <a href="https://leqiliu.github.io/" rel="external nofollow noopener" target="_blank">Leqi Liu</a> </div> <div class="periodical"> <em>Conference on Language Modeling (COLM)</em>, 2026 </div> <div class="links"> <a href="https://arxiv.org/abs/2604.11996" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">pathak2026frs</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Filtered Reasoning Score: Evaluating Reasoning Quality on a Model's Most-Confident Traces}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Pathak, Manas and Chen, Xingyao and Li, Shuozhe and Zhang, Amy and Liu, Leqi}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Conference on Language Modeling (COLM)}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2026}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="pub-entry" data-topics="rl" data-highlight="0"> <div class="pub-badge-col"> <span class="pub-venue-badge" style="background-color: #2b4c7e">ICRA</span> </div> <div class="pub-body" id="chuck2024airhockey"> <div class="title"> <a href="https://arxiv.org/abs/2405.03113" rel="external nofollow noopener" target="_blank">Robot Air Hockey: A Manipulation Testbed for Robot Learning with Reinforcement Learning</a> </div> <div class="author"> Caleb Chuck<sup>*</sup>, Carl Qi<sup>*</sup>, Michael J. Munje<sup>*</sup>, <em class="self">Shuozhe Li<sup>*</sup></em>, Max Rudolph<sup>*</sup>, Chang Shi<sup>*</sup>, Siddhant Agarwal<sup>*</sup>, Harshit Sikchi<sup>*</sup>, Abhinav Peri, Sarthak Dayal, and <span class="more-authors" title="click to view 6 more authors" data-show="Evan Kuo, Kavan Mehta, Anthony Wang, Peter Stone, Amy Zhang, Scott Niekum" data-hide="6 more authors" onclick="this.textContent = (this.textContent === this.dataset.hide) ? this.dataset.show : this.dataset.hide;">6 more authors</span> </div> <div class="periodical"> <em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2024 </div> <div class="links"> <a href="https://arxiv.org/abs/2405.03113" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a> <a href="https://rlairhockey.github.io/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Website</a> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">chuck2024airhockey</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Robot Air Hockey: A Manipulation Testbed for Robot Learning with Reinforcement Learning}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Chuck, Caleb and Qi, Carl and Munje, Michael J. and Li, Shuozhe and Rudolph, Max and Shi, Chang and Agarwal, Siddhant and Sikchi, Harshit and Peri, Abhinav and Dayal, Sarthak and Kuo, Evan and Mehta, Kavan and Wang, Anthony and Stone, Peter and Zhang, Amy and Niekum, Scott}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{IEEE International Conference on Robotics and Automation (ICRA)}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2024}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="pub-entry" data-topics="rl" data-highlight="0"> <div class="pub-badge-col"> </div> <div class="pub-body" id="li2023rca"> <div class="title"> Rapid Contact Adaptation: Sim-to-Real Mechanism for Contact-Rich Manipulation </div> <div class="author"> <em class="self">Shuozhe Li</em>, Roberto Martín-Martín, <a href="https://www.ece.utexas.edu/people/faculty/amy-zhang" rel="external nofollow noopener" target="_blank">Amy Zhang</a> </div> <div class="periodical"> <em>Manuscript</em>, 2023 </div> <div class="links"> </div> </div> </div> </li> <li> <div class="pub-entry" data-topics="rl" data-highlight="0"> <div class="pub-badge-col"> <span class="pub-venue-badge" style="background-color: #4a6b8a">SSRR</span> </div> <div class="pub-body" id="nair2022dynabarn"> <div class="title"> <a href="https://cs.gmu.edu/%C2%A0xiao/Research/DynaBARN/DynaBARN.html" rel="external nofollow noopener" target="_blank">DynaBARN: Benchmarking Metric Ground Navigation in Dynamic Environments</a> </div> <div class="author"> Anirudh Nair, Fulin Jiang, Kang Hou, Zifan Xu, <em class="self">Shuozhe Li</em>, Xuesu Xiao, <a href="https://www.cs.utexas.edu/~pstone/" rel="external nofollow noopener" target="_blank">Peter Stone</a> </div> <div class="periodical"> <em>IEEE International Symposium on Safety, Security, and Rescue Robotics (SSRR)</em>, 2022 </div> <div class="links"> <a href="https://cs.gmu.edu/%C2%A0xiao/Research/DynaBARN/DynaBARN.html" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Website</a> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">nair2022dynabarn</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{DynaBARN: Benchmarking Metric Ground Navigation in Dynamic Environments}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Nair, Anirudh and Jiang, Fulin and Hou, Kang and Xu, Zifan and Li, Shuozhe and Xiao, Xuesu and Stone, Peter}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{IEEE International Symposium on Safety, Security, and Rescue Robotics (SSRR)}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="pub-entry" data-topics="sensing" data-highlight="0"> <div class="pub-badge-col"> <span class="pub-venue-badge" style="background-color: #8a5a2b">CoNEXT</span> </div> <div class="pub-body" id="he2024vigor"> <div class="title"> <a href="https://doi.org/10.1145/3696403" rel="external nofollow noopener" target="_blank">VIGOR: Reviving Cloud Gaming Sessions</a> </div> <div class="author"> Zhaoyuan He<sup>*</sup>, Yifan Yang<sup>*</sup>, <em class="self">Shuozhe Li</em>, <a href="https://www.cs.utexas.edu/~lili/" rel="external nofollow noopener" target="_blank">Lili Qiu</a>, Diyuan Dai, Yuqing Yang</div> <div class="periodical"> <em>Proceedings of the ACM on Networking (CoNEXT)</em>, 2024 </div> <div class="links"> <a href="https://doi.org/10.1145/3696403" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">DOI</a> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">he2024vigor</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{VIGOR: Reviving Cloud Gaming Sessions}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{He, Zhaoyuan and Yang, Yifan and Li, Shuozhe and Qiu, Lili and Dai, Diyuan and Yang, Yuqing}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Proceedings of the ACM on Networking (CoNEXT)}</span><span class="p">,</span>
+  <span class="na">volume</span> <span class="p">=</span> <span class="s">{2}</span><span class="p">,</span>
+  <span class="na">number</span> <span class="p">=</span> <span class="s">{CoNEXT4}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2024}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1145/3696403}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="pub-entry" data-topics="sensing" data-highlight="0"> <div class="pub-badge-col"> <span class="pub-venue-badge" style="background-color: #6b6b2b">MobiHoc</span> </div> <div class="pub-body" id="pradhan2021rfid"> <div class="title"> <a href="https://doi.org/10.1145/3466772.3467036" rel="external nofollow noopener" target="_blank">Rotation Sensing Using Passive RFID Tags</a> </div> <div class="author"> Swadhin Pradhan, <em class="self">Shuozhe Li</em>, <a href="https://www.cs.utexas.edu/~lili/" rel="external nofollow noopener" target="_blank">Lili Qiu</a> </div> <div class="periodical"> <em>ACM International Symposium on Mobile Ad Hoc Networking and Computing (MobiHoc)</em>, 2021 </div> <div class="links"> <a href="https://doi.org/10.1145/3466772.3467036" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">DOI</a> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">pradhan2021rfid</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Rotation Sensing Using Passive RFID Tags}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Pradhan, Swadhin and Li, Shuozhe and Qiu, Lili}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{ACM International Symposium on Mobile Ad Hoc Networking and Computing (MobiHoc)}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2021}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1145/3466772.3467036}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> </ol> </div> <p class="pub-empty">No papers in this category yet.</p> <script>
+  (function () {
+    var buttons = Array.prototype.slice.call(document.querySelectorAll(".pub-filter button"));
+    var items = Array.prototype.slice.call(document.querySelectorAll(".publications ol.bibliography > li"));
+    var empty = document.querySelector(".pub-empty");
+    if (!buttons.length || !items.length) {
+      return;
+    }
+    function matches(entry, filter) {
+      if (filter === "all") {
+        return true;
+      }
+      if (filter === "highlight") {
+        return entry.getAttribute("data-highlight") === "1";
+      }
+      var topics = (entry.getAttribute("data-topics") || "").split(/\s+/);
+      return topics.indexOf(filter) !== -1;
+    }
+    function apply(filter) {
+      var shown = 0;
+      items.forEach(function (li) {
+        var entry = li.querySelector(".pub-entry");
+        var ok = entry ? matches(entry, filter) : filter === "all";
+        li.style.display = ok ? "" : "none";
+        if (ok) {
+          shown += 1;
+        }
+      });
+      buttons.forEach(function (b) {
+        b.setAttribute("aria-pressed", b.getAttribute("data-filter") === filter ? "true" : "false");
+      });
+      if (empty) {
+        empty.style.display = shown ? "none" : "block";
+      }
+    }
+    buttons.forEach(function (b) {
+      b.addEventListener("click", function () {
+        var f = b.getAttribute("data-filter");
+        apply(f);
+        if (window.history && window.history.replaceState) {
+          window.history.replaceState(null, "", "#" + f);
+        }
+      });
+    });
+    // Initial view: a filter name in the URL hash (e.g. #reasoning), a paper key
+    // (e.g. #li2026gasp, scrolls to that paper), or the highlights by default.
+    var hash = decodeURIComponent((window.location.hash || "").replace("#", ""));
+    var isFilter = buttons.some(function (b) {
+      return b.getAttribute("data-filter") === hash;
+    });
+    if (isFilter) {
+      apply(hash);
+      return;
+    }
+    var target = hash ? document.getElementById(hash) : null;
+    if (target) {
+      var entry = target.closest(".pub-entry");
+      apply(entry && entry.getAttribute("data-highlight") === "1" ? "highlight" : "all");
+      setTimeout(function () {
+        target.scrollIntoView({ block: "center" });
+      }, 50);
+      return;
+    }
+    apply("highlight");
+  })();
+</script> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Shuozhe Li. Built with <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="external nofollow noopener">al-folio</a>. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Last updated: November 25, 2026. </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/al_math/js/mathjax-setup.js"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-about",
+    title: "about",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-publications",
+          title: "publications",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
+        },{id: "nav-cv",
+          title: "CV",
+          description: "Education, research experience, publications, teaching, and service.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cv/";
+          },
+        },{id: "news-my-new-website-is-live-it-collects-my-publications-each-with-a-short-animation-of-the-core-method",
+          title: 'My new website is live! It collects my publications, each with a short...',
+          description: "",
+          section: "News",},{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%73%68%75%6F%7A%68%65.%6C%69@%75%74%65%78%61%73.%65%64%75", "_blank");
+        },
+      },{
+        id: 'social-scholar',
+        title: 'Google Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://scholar.google.com/citations?user=EAth38AAAAAJ", "_blank");
+        },
+      },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/ShuoZheLi", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/assets/al_search/js/shortcut-key.js"></script> </body> </html>

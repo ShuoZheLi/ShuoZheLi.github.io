@@ -44,23 +44,27 @@
     });
     // Initial view: a filter name in the URL hash (e.g. #reasoning), a paper key
     // (e.g. #li2026gasp, scrolls to that paper), or the highlights by default.
-    var hash = decodeURIComponent((window.location.hash || "").replace("#", ""));
-    var isFilter = buttons.some(function (b) {
-      return b.getAttribute("data-filter") === hash;
-    });
-    if (isFilter) {
-      apply(hash);
-      return;
+    function fromHash() {
+      var hash = decodeURIComponent((window.location.hash || "").replace("#", ""));
+      var isFilter = buttons.some(function (b) {
+        return b.getAttribute("data-filter") === hash;
+      });
+      if (isFilter) {
+        apply(hash);
+        return;
+      }
+      var target = hash ? document.getElementById(hash) : null;
+      if (target) {
+        var entry = target.closest(".pub-entry");
+        apply(entry && entry.getAttribute("data-highlight") === "1" ? "highlight" : "all");
+        setTimeout(function () {
+          target.scrollIntoView({ block: "center" });
+        }, 50);
+        return;
+      }
+      apply("highlight");
     }
-    var target = hash ? document.getElementById(hash) : null;
-    if (target) {
-      var entry = target.closest(".pub-entry");
-      apply(entry && entry.getAttribute("data-highlight") === "1" ? "highlight" : "all");
-      setTimeout(function () {
-        target.scrollIntoView({ block: "center" });
-      }, 50);
-      return;
-    }
-    apply("highlight");
+    fromHash();
+    window.addEventListener("hashchange", fromHash);
   })();
 </script>

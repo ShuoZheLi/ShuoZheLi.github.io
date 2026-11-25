@@ -43,10 +43,9 @@ cv:
         summary: Reinforcement learning methods for foundation models and robots.
 
       - company: Honda Research Institute USA
-        position: Student Associate
+        position: Student Associate (Sep–Dec 2025)
         location: San Jose, CA
-        start_date: 2025-09
-        end_date: 2025-12
+        date: 2025
         highlights:
           - Designed a reinforcement-learning-based self-play framework in which the model generates corrupted intermediate reasoning and learns to detect, diagnose, and repair its own errors, strengthening post-training self-reflection and off-trajectory recoverability.
           - Developed a pollution–recovery training loop that jointly optimizes self-pollution and self-correction, so the model learns both to create challenging perturbations and to reconstruct correct reasoning from them.
@@ -61,8 +60,7 @@ cv:
       - company: Learning Agents Research Group, The University of Texas at Austin
         position: Researcher (advisor Prof. Peter Stone)
         location: Austin, TX
-        start_date: 2022
-        end_date: 2022
+        date: 2022
         summary: Robot navigation in crowded public spaces with reinforcement learning (summer 2022).
 
       - company: Wireless Lab, Wireless Networking and Communications Group, The University of Texas at Austin
@@ -73,10 +71,9 @@ cv:
         summary: Simultaneous localization and mapping (SLAM) with RFID and mmWave sensing.
 
       - company: Hauoli
-        position: Team Lead, Mobile App Development
+        position: Team Lead, Mobile App Development (summer 2020)
         location: Austin, TX
-        start_date: 2020-05
-        end_date: 2020-08
+        date: 2020
         highlights:
           - Designed a multi-threaded streaming algorithm that improved speed estimation from users' location information by 50% when many users are within network range.
           - Engineered a hybrid decentralized network protocol combining Bluetooth Low Energy and acoustic communication with AIMD-based congestion control, supporting up to 1,000 users with centimeter-level distance measurement and real-time updates.

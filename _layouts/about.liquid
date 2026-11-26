@@ -56,10 +56,14 @@ layout: default
         <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected Publications</a>
       </h2>
       <p class="pub-legend">
-        Each animation sketches the core idea of the paper. * denotes equal contribution. See the
-        <a href="{{ '/publications/' | relative_url }}">publications page</a> for the full list.
+        Each animation sketches the core idea of the paper. * denotes equal contribution.
       </p>
-      {% include selected_papers.liquid %}
+      {% include pub_filter_bar.liquid %}
+      <div class="publications">
+        {% bibliography --group_by none %}
+      </div>
+      <p class="pub-empty">No papers in this category yet.</p>
+      {% include pub_filter.liquid %}
     {% endif %}
 
     <!-- Community service -->

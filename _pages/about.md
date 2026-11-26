@@ -12,7 +12,6 @@ profile:
   links: >
     <a href="mailto:shuozhe.li@utexas.edu">Email</a> /
     <a href="https://scholar.google.com/citations?user=EAth38AAAAAJ&amp;hl=en">Google Scholar</a> /
-    <a href="https://github.com/ShuoZheLi">GitHub</a> /
     <a href="https://x.com/ShuozheL">Twitter</a> /
     <a href="/cv/">CV</a>
 

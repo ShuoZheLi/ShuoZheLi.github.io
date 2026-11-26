@@ -5,7 +5,7 @@ layout: default
   Local override of al_folio_core's about.liquid.
   Changes: puts the intro text in a column beside the photo (no wrapping under it),
   loads the publication styles, renames the publication block to
-  "highlighted publications", and adds a "community service" section rendered
+  "Selected Publications", and adds a "community service" section rendered
   from _data/service.yml after the publications.
 {%- endcomment -%}
 {% include pub_styles.liquid %}
@@ -23,13 +23,8 @@ layout: default
   </header>
 
   <article>
-    {%- comment -%}
-      Intro text (everything in about.md above the "research" marker) sits in a column beside the
-      photo, so it never wraps under it; everything after the marker spans the full width.
-    {%- endcomment -%}
-    {% assign content_parts = content | split: '<!-- research -->' %}
     <div class="intro-row">
-      <div class="intro-text">{{ content_parts[0] }}</div>
+      <div class="intro-text">{{ content }}</div>
       {% if page.profile and page.profile.image %}
         <div class="intro-photo">
           {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
@@ -47,9 +42,6 @@ layout: default
         </div>
       {% endif %}
     </div>
-    {% if content_parts.size > 1 %}
-      <div class="intro-rest">{{ content_parts[1] }}</div>
-    {% endif %}
 
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
@@ -62,7 +54,7 @@ layout: default
     <!-- Highlighted papers -->
     {% if page.selected_papers %}
       <h2 class="home-section-title">
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">highlighted publications</a>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected Publications</a>
       </h2>
       <p class="pub-legend">
         Each animation sketches the core idea of the paper. * denotes equal contribution. See the

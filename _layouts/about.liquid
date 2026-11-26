@@ -3,45 +3,45 @@ layout: default
 ---
 {%- comment -%}
   Local override of al_folio_core's about.liquid.
-  Changes: puts the intro text in a column beside the photo (no wrapping under it),
+  Changes: lays out name, intro text and photo in a grid (desktop: text beside the photo;
+  phones: a small photo above the name, then the links and the text),
   loads the publication styles, renames the publication block to
   "Selected Publications", and adds a "Community Service" section rendered
   from _data/service.yml after the publications.
 {%- endcomment -%}
 {% include pub_styles.liquid %}
 <div class="post">
-  <header class="post-header">
-    <h1 class="post-title home-name">
-      {{ site.first_name }} {{ site.last_name }}
-      {% if page.name_zh %}<span class="zh" lang="zh">{{ page.name_zh }}</span>{% endif %}
-    </h1>
-    {% if page.subtitle %}<p class="desc">{{ page.subtitle }}</p>{% endif %}
-  </header>
+  <div class="intro-grid">
+    <header class="post-header intro-name">
+      <h1 class="post-title home-name">
+        {{ site.first_name }} {{ site.last_name }}
+        {% if page.name_zh %}<span class="zh" lang="zh">{{ page.name_zh }}</span>{% endif %}
+      </h1>
+      {% if page.subtitle %}<p class="desc">{{ page.subtitle }}</p>{% endif %}
+    </header>
+    <div class="intro-text">{{ content }}</div>
+    {% if page.profile and page.profile.image %}
+      <div class="intro-photo">
+        {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+        {% if page.profile.image_circular %}
+          {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+        {% else %}
+          {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+        {% endif %}
+        {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 641px)
+      30vw, 45vw"{% endcapture %}
+        {%
+          include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
+          cache_bust=true
+        %}
+      </div>
+      {% if page.profile.links %}
+        <p class="photo-links intro-links">{{ page.profile.links }}</p>
+      {% endif %}
+    {% endif %}
+  </div>
 
   <article>
-    <div class="intro-row">
-      <div class="intro-text">{{ content }}</div>
-      {% if page.profile and page.profile.image %}
-        <div class="intro-photo">
-          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-          {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
-          {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
-          {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-            cache_bust=true
-          %}
-          {% if page.profile.links %}
-            <p class="photo-links">{{ page.profile.links }}</p>
-          {% endif %}
-        </div>
-      {% endif %}
-    </div>
-
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
       <h2 class="home-section-title">

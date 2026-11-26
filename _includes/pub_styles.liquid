@@ -203,22 +203,30 @@
     white-space: nowrap;
     font-weight: 600;
   }
-  /* ---------- home page intro: text column beside the photo ---------- */
-  .intro-row {
-    display: flex;
-    gap: 2rem;
-    align-items: flex-start;
+  /* ---------- home page intro: name, text beside the photo; phones: small photo on top ---------- */
+  .intro-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 30%;
+    grid-template-rows: auto auto auto 1fr;
+    grid-template-areas:
+      "name name"
+      "text photo"
+      "text links"
+      "text .";
+    column-gap: 2rem;
+  }
+  .intro-name {
+    grid-area: name;
   }
   .intro-text {
-    flex: 1 1 auto;
+    grid-area: text;
     min-width: 0;
   }
   .intro-text p:last-child {
     margin-bottom: 0;
   }
   .intro-photo {
-    flex: 0 0 30%;
-    max-width: 30%;
+    grid-area: photo;
   }
   .intro-photo figure {
     margin: 0.3rem 0 0 0;
@@ -227,6 +235,7 @@
     width: 100%;
   }
   .photo-links {
+    grid-area: links;
     margin: 0.6rem 0 0 0;
     text-align: center;
     font-size: 0.95rem;
@@ -261,14 +270,25 @@
     .research-thrusts .thrust-label {
       text-align: left;
     }
-    .intro-row {
-      flex-direction: column-reverse;
-      gap: 1rem;
+    .intro-grid {
+      grid-template-columns: minmax(0, 1fr);
+      grid-template-rows: auto;
+      grid-template-areas:
+        "photo"
+        "name"
+        "links"
+        "text";
     }
     .intro-photo {
-      flex: none;
-      max-width: 100%;
-      width: 100%;
+      width: 42%;
+      max-width: 170px;
+    }
+    .intro-photo figure {
+      margin: 0 0 1.1rem 0;
+    }
+    .photo-links {
+      margin: 0.1rem 0 1rem 0;
+      text-align: left;
     }
     .pub-entry {
       flex-direction: column;

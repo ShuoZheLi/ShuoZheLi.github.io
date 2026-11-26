@@ -253,7 +253,7 @@
   .photo-links {
     margin: 0.6rem 0 0 0;
     text-align: center;
-    font-size: 0.85rem;
+    font-size: 0.95rem;
   }
   /* ---------- home page sections ---------- */
   .home-section-title {
@@ -387,6 +387,7 @@
     var buttons = Array.prototype.slice.call(document.querySelectorAll(".pub-filter button"));
     var items = Array.prototype.slice.call(document.querySelectorAll(".publications ol.bibliography > li"));
     var empty = document.querySelector(".pub-empty");
+    var syncHash = true;
     if (!buttons.length || !items.length) {
       return;
     }
@@ -421,7 +422,7 @@
       b.addEventListener("click", function () {
         var f = b.getAttribute("data-filter");
         apply(f);
-        if (window.history && window.history.replaceState) {
+        if (syncHash && window.history && window.history.replaceState) {
           window.history.replaceState(null, "", "#" + f);
         }
       });
@@ -448,8 +449,12 @@
       }
       apply("highlight");
     }
-    fromHash();
-    window.addEventListener("hashchange", fromHash);
+    if (syncHash) {
+      fromHash();
+      window.addEventListener("hashchange", fromHash);
+    } else {
+      apply("highlight");
+    }
   })();
 </script> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Shuozhe Li. Built with <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="external nofollow noopener">al-folio</a>. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Last updated: November 26, 2026. </div> </footer> <script>
   window.alFolio = {

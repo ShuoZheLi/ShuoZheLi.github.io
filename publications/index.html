@@ -11,7 +11,7 @@
 ",
         "headline": "publications",
         
-        "sameAs": ["https://scholar.google.com/citations?user=EAth38AAAAAJ","https://github.com/ShuoZheLi"],
+        "sameAs": ["https://scholar.google.com/citations?user=EAth38AAAAAJ","https://github.com/ShuoZheLi","https://twitter.com/ShuozheL"],
         
         "name": "Shuozhe Li",
         "@context": "https://schema.org"
@@ -191,6 +191,42 @@
     color: var(--global-text-color-light);
     font-style: italic;
   }
+  /* ---------- home page name (same treatment as ryanxhr.github.io) ---------- */
+  @font-face {
+    font-family: "Source Sans 3";
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    src: url("/assets/fonts/source-sans-3-latin-300-normal.woff2") format("woff2");
+  }
+  .post-title.home-name {
+    font-family: "Source Sans 3", "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 42px;
+    line-height: 1.1;
+    letter-spacing: -0.4px;
+  }
+  .post-title.home-name .zh {
+    font-family: "Kaiti SC", STKaiti, KaiTi, serif;
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: var(--global-text-color-light);
+    margin-left: 4px;
+    white-space: nowrap;
+  }
+  /* ---------- news: fixed-height scrolling box ---------- */
+  .news-scroll {
+    max-height: 12.5rem;
+    overflow-y: auto;
+    border-top: 1px solid var(--global-divider-color);
+    border-bottom: 1px solid var(--global-divider-color);
+  }
+  .news th.news-date {
+    width: 6.5rem;
+    white-space: nowrap;
+    font-weight: 600;
+  }
   /* ---------- home page intro: text column beside the photo ---------- */
   .intro-row {
     display: flex;
@@ -282,9 +318,9 @@
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Li, Shuozhe and Cao, Jincheng and Hu, Bodun and Mokhtari, Aryan and Liu, Leqi and Zhang, Amy}</span><span class="p">,</span>
   <span class="na">journal</span> <span class="p">=</span> <span class="s">{arXiv preprint arXiv:2602.00085}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2026}</span><span class="p">,</span>
-<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="pub-entry pub-highlight has-media" data-topics="reasoning" data-highlight="1"> <div class="pub-media"> <a href="/assets/img/publication_preview/expo.svg" target="_blank" rel="noopener" title="Open the animation in a new tab"> <img class="pub-anim" src="/assets/img/publication_preview/expo.svg" alt="Animation: on a hard problem all of the model’s own samples are wrong, so GRPO gets no signal; an expert chain-of-thought is correct but far out in the tail of the policy; ExPO conditions on the ground-truth answer to generate a self-explanation that is both likely under the policy and correct, and training on it shifts the policy toward correct reasoning." loading="lazy" decoding="async"> </a> </div> <div class="pub-body" id="zhou2025expo"> <div class="title"> <a href="https://arxiv.org/abs/2507.02834" rel="external nofollow noopener" target="_blank">ExPO: Unlocking Hard Reasoning with Self-Explanation-Guided Reinforcement Learning</a> </div> <div class="author"> Ruiyang Zhou<sup>*</sup>, <em class="self">Shuozhe Li<sup>*</sup></em>, <a href="https://www.ece.utexas.edu/people/faculty/amy-zhang" rel="external nofollow noopener" target="_blank">Amy Zhang</a>, <a href="https://leqiliu.github.io/" rel="external nofollow noopener" target="_blank">Leqi Liu<sup>*</sup></a> </div> <div class="periodical"> <span class="pub-venue-badge" style="background-color: #5b3fa3">NeurIPS 2025</span> <em>Advances in Neural Information Processing Systems (NeurIPS)</em> </div> <div class="pub-tldr">When the model cannot yet solve a problem, let it explain the known answer: self-explanations conditioned on the ground truth are in-distribution positive samples that unlock learning where GRPO receives no signal and expert CoTs are too far off-policy.</div> <div class="links"> <a href="https://arxiv.org/abs/2507.02834" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a> <a href="https://github.com/HumainLab/ExPO_rl_reasoning_by_explanation" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a> <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="abstract hidden"> <p>Self-improvement via RL often fails on complex reasoning tasks because GRPO-style post-training methods rely on the model’s initial ability to generate positive samples. Without guided exploration, these approaches merely reinforce what the model already knows (distribution-sharpening) rather than enabling the model to solve problems where it initially generates no correct solutions. To unlock reasoning ability in such settings, the model must explore new reasoning trajectories beyond its current output distribution. Such exploration requires access to sufficiently good positive samples to guide the learning. While expert demonstrations seem like a natural solution, we find that they are often ineffective in RL post-training. Instead, we identify two key properties of effective positive samples: they should (1) be likely under the current policy, and (2) increase the model’s likelihood of predicting the correct answer. Based on these insights, we propose Self-Explanation Policy Optimization (ExPO), a simple and modular framework that generates such samples by conditioning on the ground-truth answer. It can be integrated with popular RL training methods like GRPO and DPO. ExPO enables efficient exploration and guides the model to produce reasoning trajectories more aligned with its policy than expert-written CoTs, while ensuring higher quality than its own (incorrect) samples. Experiments show that ExPO improves both learning efficiency and final performance on reasoning benchmarks, surpassing expert-demonstration-based methods in challenging settings such as MATH level-5, where the model initially struggles the most.</p> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">zhou2025expo</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="pub-entry pub-highlight has-media" data-topics="reasoning" data-highlight="1"> <div class="pub-media"> <a href="/assets/img/publication_preview/expo.svg" target="_blank" rel="noopener" title="Open the animation in a new tab"> <img class="pub-anim" src="/assets/img/publication_preview/expo.svg" alt="Animation: on a hard problem all of the model’s own samples are wrong, so GRPO gets no signal; an expert chain-of-thought is correct but far out in the tail of the policy; ExPO conditions on the ground-truth answer to generate a self-explanation that is both likely under the policy and correct, and training on it shifts the policy toward correct reasoning." loading="lazy" decoding="async"> </a> </div> <div class="pub-body" id="zhou2025expo"> <div class="title"> <a href="https://arxiv.org/abs/2507.02834" rel="external nofollow noopener" target="_blank">ExPO: Unlocking Hard Reasoning with Self-Explanation-Guided Reinforcement Learning</a> </div> <div class="author"> <em class="self">Shuozhe Li<sup>*</sup></em>, Ruiyang Zhou<sup>*</sup>, <a href="https://www.ece.utexas.edu/people/faculty/amy-zhang" rel="external nofollow noopener" target="_blank">Amy Zhang</a>, <a href="https://leqiliu.github.io/" rel="external nofollow noopener" target="_blank">Leqi Liu<sup>*</sup></a> </div> <div class="periodical"> <span class="pub-venue-badge" style="background-color: #5b3fa3">NeurIPS 2025</span> <em>Advances in Neural Information Processing Systems (NeurIPS)</em> </div> <div class="pub-tldr">When the model cannot yet solve a problem, let it explain the known answer: self-explanations conditioned on the ground truth are in-distribution positive samples that unlock learning where GRPO receives no signal and expert CoTs are too far off-policy.</div> <div class="links"> <a href="https://arxiv.org/abs/2507.02834" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a> <a href="https://github.com/HumainLab/ExPO_rl_reasoning_by_explanation" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a> <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="abstract hidden"> <p>Self-improvement via RL often fails on complex reasoning tasks because GRPO-style post-training methods rely on the model’s initial ability to generate positive samples. Without guided exploration, these approaches merely reinforce what the model already knows (distribution-sharpening) rather than enabling the model to solve problems where it initially generates no correct solutions. To unlock reasoning ability in such settings, the model must explore new reasoning trajectories beyond its current output distribution. Such exploration requires access to sufficiently good positive samples to guide the learning. While expert demonstrations seem like a natural solution, we find that they are often ineffective in RL post-training. Instead, we identify two key properties of effective positive samples: they should (1) be likely under the current policy, and (2) increase the model’s likelihood of predicting the correct answer. Based on these insights, we propose Self-Explanation Policy Optimization (ExPO), a simple and modular framework that generates such samples by conditioning on the ground-truth answer. It can be integrated with popular RL training methods like GRPO and DPO. ExPO enables efficient exploration and guides the model to produce reasoning trajectories more aligned with its policy than expert-written CoTs, while ensuring higher quality than its own (incorrect) samples. Experiments show that ExPO improves both learning efficiency and final performance on reasoning benchmarks, surpassing expert-demonstration-based methods in challenging settings such as MATH level-5, where the model initially struggles the most.</p> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">zhou2025expo</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{ExPO: Unlocking Hard Reasoning with Self-Explanation-Guided Reinforcement Learning}</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Zhou, Ruiyang and Li, Shuozhe and Zhang, Amy and Liu, Leqi}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Li, Shuozhe and Zhou, Ruiyang and Zhang, Amy and Liu, Leqi}</span><span class="p">,</span>
   <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Advances in Neural Information Processing Systems (NeurIPS)}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2025}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="pub-entry pub-highlight has-media" data-topics="efficiency" data-highlight="1"> <div class="pub-media"> <a href="/assets/img/publication_preview/stitchllm.svg" target="_blank" rel="noopener" title="Open the animation in a new tab"> <img class="pub-anim" src="/assets/img/publication_preview/stitchllm.svg" alt="Animation: a request flows through the bottom decoder blocks of a large LLM, a trained stitching layer that maps the hidden size, and the top blocks of a smaller LLM; as load rises the scheduler moves the stitch point to configurations that fit the memory budget, trading accuracy gradually instead of jumping between model sizes." loading="lazy" decoding="async"> </a> </div> <div class="pub-body" id="hu2025stitchllm"> <div class="title"> <a href="https://aclanthology.org/2025.acl-long.1305/" rel="external nofollow noopener" target="_blank">StitchLLM: Serving LLMs, One Block at a Time</a> </div> <div class="author"> Bodun Hu<sup>*</sup>, <em class="self">Shuozhe Li<sup>*</sup></em>, Saurabh Agarwal, Myungjin Lee, Akshay Jajoo, Jiamin Li, Le Xu, Geon-Woo Kim, Donghyun Kim, Hong Xu, and <span class="more-authors" title="click to view 2 more authors" data-show="Amy Zhang, Aditya Akella" data-hide="2 more authors" onclick="this.textContent = (this.textContent === this.dataset.hide) ? this.dataset.show : this.dataset.hide;">2 more authors</span> </div> <div class="periodical"> <span class="pub-venue-badge" style="background-color: #b03a2e">ACL 2025</span> <em>Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (ACL)</em> </div> <div class="pub-tldr">Serve LLMs at block granularity: bottom blocks of a large model are stitched to top blocks of a smaller one through a lightweight trained layer, giving fine-grained accuracy–throughput trade-offs under bursty load.</div> <div class="links"> <a href="https://aclanthology.org/2025.acl-long.1305/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper</a> <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="abstract hidden"> <p>The rapid evolution of large language models (LLMs) has revolutionized natural language processing (NLP) tasks such as text generation, translation, and comprehension. However, the increasing computational demands and inference costs of these models present significant challenges. This study investigates the dynamic and efficient utilization of pre-trained weights from open-sourced LLMs of varying parameter sizes to achieve an optimal balance between computational efficiency and task performance. Drawing inspiration from the dual-process theory of human cognition, we introduce StitchLLM: a dynamic model routing framework that employs a powerful bottom model to process all queries, and uses a lightweight routing mechanism to allocate computational resources appropriately. Our novel framework optimizes efficiency and maintains performance, leveraging a trainable stitching layer for seamless integration of decoder layers across different LLMs. Experimental results demonstrate that StitchLLM improves system throughput while minimizing performance degradation, offering a flexible solution for deploying LLMs in resource-constrained settings.</p> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">hu2025stitchllm</span><span class="p">,</span>
@@ -447,8 +483,23 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "news-my-new-website-is-live-it-collects-my-publications-each-with-a-short-animation-of-the-core-method",
-          title: 'My new website is live! It collects my publications, each with a short...',
+        },{id: "news-presented-expo-at-neurips-2025-in-san-diego",
+          title: 'Presented ExPO at NeurIPS 2025 in San Diego.',
+          description: "",
+          section: "News",},{id: "news-invited-talk-on-expo-and-gasp-at-cerebras-systems",
+          title: 'Invited talk on ExPO and GASP at Cerebras Systems.',
+          description: "",
+          section: "News",},{id: "news-invited-to-visit-path-robotics",
+          title: 'Invited to visit Path Robotics.',
+          description: "",
+          section: "News",},{id: "news-presented-filtered-reasoning-score-frs-at-colm-2026-in-san-francisco",
+          title: 'Presented Filtered Reasoning Score (FRS) at COLM 2026 in San Francisco.',
+          description: "",
+          section: "News",},{id: "news-attended-corl-2026-in-austin",
+          title: 'Attended CoRL 2026 in Austin.',
+          description: "",
+          section: "News",},{id: "news-i-will-present-guided-adversarial-self-play-gasp-at-neurips-2026-in-sydney-dec-6-12",
+          title: 'I will present Guided Adversarial Self-Play (GASP) at NeurIPS 2026 in Sydney (Dec...',
           description: "",
           section: "News",},{
         id: 'social-email',
@@ -470,6 +521,13 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://github.com/ShuoZheLi", "_blank");
+        },
+      },{
+        id: 'social-x',
+        title: 'X',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://twitter.com/ShuozheL", "_blank");
         },
       },{
       id: 'light-theme',

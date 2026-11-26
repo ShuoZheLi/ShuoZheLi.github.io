@@ -10,7 +10,7 @@
         "description": "Looks like there has been a mistake. Nothing exists here.",
         "headline": "Page not found",
         
-        "sameAs": ["https://scholar.google.com/citations?user=EAth38AAAAAJ","https://github.com/ShuoZheLi"],
+        "sameAs": ["https://scholar.google.com/citations?user=EAth38AAAAAJ","https://github.com/ShuoZheLi","https://twitter.com/ShuozheL"],
         
         "name": "Shuozhe Li",
         "@context": "https://schema.org"
@@ -53,8 +53,23 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "news-my-new-website-is-live-it-collects-my-publications-each-with-a-short-animation-of-the-core-method",
-          title: 'My new website is live! It collects my publications, each with a short...',
+        },{id: "news-presented-expo-at-neurips-2025-in-san-diego",
+          title: 'Presented ExPO at NeurIPS 2025 in San Diego.',
+          description: "",
+          section: "News",},{id: "news-invited-talk-on-expo-and-gasp-at-cerebras-systems",
+          title: 'Invited talk on ExPO and GASP at Cerebras Systems.',
+          description: "",
+          section: "News",},{id: "news-invited-to-visit-path-robotics",
+          title: 'Invited to visit Path Robotics.',
+          description: "",
+          section: "News",},{id: "news-presented-filtered-reasoning-score-frs-at-colm-2026-in-san-francisco",
+          title: 'Presented Filtered Reasoning Score (FRS) at COLM 2026 in San Francisco.',
+          description: "",
+          section: "News",},{id: "news-attended-corl-2026-in-austin",
+          title: 'Attended CoRL 2026 in Austin.',
+          description: "",
+          section: "News",},{id: "news-i-will-present-guided-adversarial-self-play-gasp-at-neurips-2026-in-sydney-dec-6-12",
+          title: 'I will present Guided Adversarial Self-Play (GASP) at NeurIPS 2026 in Sydney (Dec...',
           description: "",
           section: "News",},{
         id: 'social-email',
@@ -76,6 +91,13 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://github.com/ShuoZheLi", "_blank");
+        },
+      },{
+        id: 'social-x',
+        title: 'X',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://twitter.com/ShuozheL", "_blank");
         },
       },{
       id: 'light-theme',

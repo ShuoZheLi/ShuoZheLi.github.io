@@ -5,7 +5,7 @@ layout: default
   Local override of al_folio_core's about.liquid.
   Changes: puts the intro text in a column beside the photo (no wrapping under it),
   loads the publication styles, renames the publication block to
-  "Selected Publications", and adds a "community service" section rendered
+  "Selected Publications", and adds a "Community Service" section rendered
   from _data/service.yml after the publications.
 {%- endcomment -%}
 {% include pub_styles.liquid %}
@@ -45,7 +45,7 @@ layout: default
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
       <h2 class="home-section-title">
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+        <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
       </h2>
       {% include news.liquid limit=true %}
     {% endif %}
@@ -68,7 +68,7 @@ layout: default
 
     <!-- Community service -->
     {% if page.service and site.data.service %}
-      <h2 class="home-section-title">community service</h2>
+      <h2 class="home-section-title">Community Service</h2>
       <ul class="service-list">
         {% for group in site.data.service %}
           <li>

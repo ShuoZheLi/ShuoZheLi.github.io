@@ -12,8 +12,7 @@ profile:
   links: >
     <a href="mailto:shuozhe.li@utexas.edu">Email</a> /
     <a href="https://scholar.google.com/citations?user=EAth38AAAAAJ&amp;hl=en">Google Scholar</a> /
-    <a href="https://x.com/ShuozheL">Twitter</a> /
-    <a href="/cv/">CV</a>
+    <a href="https://x.com/ShuozheL">Twitter</a>
 
 selected_papers: true # highlighted papers are those marked selected={true} in _bibliography/papers.bib
 service: true # renders the community service list from _data/service.yml

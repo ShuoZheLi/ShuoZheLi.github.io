@@ -239,10 +239,14 @@
     margin: 0 0 1rem 0;
   }
   .research-thrusts .thrust {
-    margin-bottom: 0.7rem;
+    display: grid;
+    grid-template-columns: 7.4rem 1fr;
+    column-gap: 0.9rem;
+    margin-bottom: 0.6rem;
   }
   .research-thrusts .thrust-label {
     font-weight: 700;
+    text-align: right;
   }
   .service-list {
     padding-left: 1.2rem;
@@ -251,6 +255,12 @@
     margin-bottom: 0.3rem;
   }
   @media (max-width: 640px) {
+    .research-thrusts .thrust {
+      grid-template-columns: 1fr;
+    }
+    .research-thrusts .thrust-label {
+      text-align: left;
+    }
     .intro-row {
       flex-direction: column-reverse;
       gap: 1rem;

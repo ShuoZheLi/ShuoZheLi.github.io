@@ -34,15 +34,15 @@ I work on **reinforcement learning for large language models**: making LLM reaso
 
 <div class="research-thrusts">
   <div class="thrust">
-    <div class="thrust-label">Capability.</div>
+    <div class="thrust-label">Capability</div>
     <div class="thrust-q">How can we help models learn to solve harder problems (<a href="{{ '/publications/#zhou2025expo' | relative_url }}">ExPO</a>) and recover from misleading reasoning (<a href="{{ '/publications/#li2026gasp' | relative_url }}">GASP</a>)?</div>
   </div>
   <div class="thrust">
-    <div class="thrust-label">Reliability.</div>
+    <div class="thrust-label">Reliability</div>
     <div class="thrust-q">How can we evaluate reasoning beyond final-answer accuracy (<a href="{{ '/publications/#pathak2026frs' | relative_url }}">FRS</a>) and improve reasoning without sacrificing calibration (<a href="{{ '/publications/#li2026carerft' | relative_url }}">CARE-RFT</a>)?</div>
   </div>
   <div class="thrust">
-    <div class="thrust-label">Deployability.</div>
+    <div class="thrust-label">Deployability</div>
     <div class="thrust-q">How can we adapt reasoning models to real-world constraints (<a href="{{ '/publications/#li2026dap' | relative_url }}">DAP</a>, <a href="{{ '/publications/#hu2025stitchllm' | relative_url }}">StitchLLM</a>)?</div>
   </div>
 </div>

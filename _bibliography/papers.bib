@@ -159,6 +159,10 @@
   year        = {2026},
   html        = {https://proceedings.mlr.press/v306/chen26br.html},
   topics      = {efficiency},
+  preview     = {phi_balancing.svg},
+  preview_alt = {Animation: a router sends tokens to six experts whose mini-batch loads jump around; an exponential moving average m tracks the population load, each expert is priced by q = gradient of phi at m (high for busy, low for idle experts), and the auxiliary loss sum of q times p moves routing until every expert gets about 1/E of the tokens.},
+  tldr        = {Balance experts at the population level, not per mini-batch: keep an EMA of routing loads and replace ST-MoE's noisy batch frequencies fₑ with the dual price ∇ϕ(m)ₑ of a convex potential, derived by convex duality and mirror descent.},
+  abstract    = {Mixture-of-Experts (MoE) models rely on balanced expert utilization to fully realize their scalability. However, existing load-balancing methods are largely heuristic and operate on noisy mini-batch assignment statistics, introducing bias relative to population-level objectives. We propose ϕ-balancing, a principled framework that directly targets population-level expert balance by minimizing a strictly convex, symmetric, and differentiable potential of the expected routing distribution. Using convex duality, we derive an equivalent min-max formulation and obtain a simple online algorithm via mirror descent, yielding an efficient EMA-based routing adjustment with negligible overhead. Across large-scale pretraining and downstream fine-tuning, ϕ-balancing consistently outperforms prior Switch-style and loss-free baselines, demonstrating more stable and effective expert utilization.},
   bibtex_show = {true},
 }
 
@@ -182,6 +186,10 @@
   arxiv       = {2405.03113},
   website     = {https://rlairhockey.github.io/},
   topics      = {rl},
+  preview     = {airhockey.svg},
+  preview_alt = {Animation: on a top-down air hockey table, a paddle strikes a moving puck into a goal region in a 2D simulator, a robot arm hits the puck into a block in a 3D simulator, and a real UR5e juggles the puck on the tilted table while an overhead camera tracks it; the shared tasks are then used to benchmark behavior cloning, offline RL (IQL) and online RL.},
+  tldr        = {A dynamic, interactive RL testbed: ten air hockey tasks from reaching to juggling and block pushing, one interface across a 2D simulator, a 3D simulator and a real UR5e, plus teleoperated demonstrations for BC and offline RL.},
+  abstract    = {Reinforcement Learning is a promising tool for learning complex policies even in fast-moving and object-interactive domains where human teleoperation or hard-coded policies might fail. To effectively reflect this challenging category of tasks, we introduce a dynamic, interactive RL testbed based on robot air hockey. By augmenting air hockey with a large family of tasks ranging from easy tasks like reaching, to challenging ones like pushing a block by hitting it with a puck, as well as goal-based and human-interactive tasks, our testbed allows a varied assessment of RL capabilities. The robot air hockey testbed also supports sim-to-real transfer with three domains: two simulators of increasing fidelity and a real robot system. Using a dataset of demonstration data gathered through two teleoperation systems: a virtualized control environment, and human shadowing, we assess the testbed with behavior cloning, offline RL, and RL from scratch.},
   bibtex_show = {true},
 }
 
@@ -201,6 +209,10 @@
   year        = {2022},
   website     = {https://cs.gmu.edu/~xiao/Research/DynaBARN/DynaBARN.html},
   topics      = {rl},
+  preview     = {dynabarn.svg},
+  preview_alt = {Animation: in a 20 m by 20 m world, random points are sampled and a polynomial is fit through them to form an obstacle path; each segment gets a sampled speed so the obstacle speeds up and slows down; many obstacles with hard motion profiles form a difficult world, and a ground robot drives from start to goal without collision.},
+  tldr        = {A Gazebo benchmark for navigation among dynamic obstacles whose motion profiles (path smoothness, speed, speed variation) are generated from random polynomials and graded by difficulty metrics, with human demonstrations and DWA/TEB/RL/BC baselines.},
+  abstract    = {Safely avoiding dynamic obstacles while moving toward a goal is a fundamental capability of autonomous mobile robots. Current benchmarks for dynamic obstacle avoidance do not provide a way to alter how obstacles move and instead use only a single method to uniquely determine the movement of obstacles, e.g., constant velocity, the social force model, or Optimal Reciprocal Collision Avoidance (ORCA). Using a single method in this way restricts the variety of scenarios in which the robot navigation system is trained and/or evaluated, thus limiting its robustness to dynamic obstacles of different speeds, trajectory smoothness, acceleration/deceleration, etc., which we call motion profiles. In this paper, we present a simulation testbed, DynaBARN, to evaluate a robot navigation system's ability to navigate in environments with obstacles with different motion profiles, which are systematically generated by a set of difficulty metrics. Additionally, we provide a demonstration collection pipeline that records robot navigation trials controlled by human users to compare with autonomous navigation performance and to develop navigation systems using learning from demonstration. Finally, we provide results of four classical and learning-based navigation systems in DynaBARN, which can serve as baselines for future studies. We release DynaBARN open source as a standardized benchmark for future autonomous navigation research in environments with different dynamic obstacles.},
   bibtex_show = {true},
 }
 
@@ -214,6 +226,10 @@
   year        = {2024},
   doi         = {10.1145/3696403},
   topics      = {sensing},
+  preview     = {vigor.svg},
+  preview_alt = {Animation: frame t of a cloud-gamed scene arrives with missing macroblocks; the decoder marks them with a mask and the client renders lightweight game states for frames t minus 1 and t; optical flow from the game states warps frame t minus 1, enhancement and inpainting fill new content, and the correctly decoded blocks are kept to give the recovered frame.},
+  tldr        = {Recover lost or corrupted cloud-gaming frames on the client: optical flow from cheap game states (projected object vertices) warps the previous frame, enhancement and inpainting fill the rest, and partially decoded macroblocks are kept.},
+  abstract    = {Cloud gaming is a multi-billion dollar industry. A client in cloud gaming sends its movement to the game server on the Internet, which renders and transmits the resulting video back. In order to provide a good gaming experience, a latency below 80ms is required. This means that video rendering, encoding, transmission, decoding, and displaying have to finish within that time frame, which is especially challenging to achieve due to server overload, network congestion, and losses. In this paper, we propose VIGOR, a new method to revive cloud gaming sessions by recovering lost or corrupted video frames. Unlike traditional video frame recovery, VIGOR uses game states to enhance recovery accuracy significantly and utilizes partially decoded frames to recover lost portions. We develop a holistic system that consists of (i) efficiently extracting game states, (ii) modifying H.264 video decoder to generate a mask to indicate which portions of video frames need recovery, and (iii) designing a novel neural network to recover either complete or partial video frames. VIGOR is extensively evaluated using iPhone 12 and laptop implementations, and we demonstrate the utility of game states in the game video recovery and the effectiveness of our overall design.},
   bibtex_show = {true},
 }
 
@@ -225,5 +241,9 @@
   year        = {2021},
   doi         = {10.1145/3466772.3467036},
   topics      = {sensing},
+  preview     = {rfid.svg},
+  preview_alt = {Animation: a ball carrying a passive RFID tag spins in front of one linearly polarized reader antenna; the polarization mismatch makes the received signal strength and phase rise and fall periodically; model curves for candidate rotation axes are compared with the measurement to find the axis, and counting signal peaks gives the rotation speed.},
+  tldr        = {TIMU turns a passive RFID tag into a battery-free IMU: polarization makes RSS and phase depend on the tag's orientation, so fitting an analytical signal model with one reader antenna recovers the rotation axis, speed and translation.},
+  abstract    = {Rotational movement is important in many applications, yet has been under-explored. In this paper, we explore the feasibility of using a single RFID reader antenna to simultaneously sense rotation and translation movement (i.e., rotation axis, rotation speed, and translation speed). We exploit the polarization in RFID to enable motion sensing. We develop an analytical model to capture the impact of polarization on the received signal and an optimization framework to incorporate the model to estimate the movement. We implement our system, Tag-based Inertial Measurement Unit (TIMU), and demonstrate its effectiveness through an extensive evaluation. To our knowledge, this is the first system that tracks general motion using a single RFID reader antenna.},
   bibtex_show = {true},
 }

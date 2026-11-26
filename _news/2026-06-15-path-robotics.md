@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Invited to visit [Path Robotics](https://www.path-robotics.com/).
+Invited visit and talk on Agentic Robot at [Path Robotics](https://www.path-robotics.com/).

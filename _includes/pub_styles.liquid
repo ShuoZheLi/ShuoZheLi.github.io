@@ -167,6 +167,42 @@
     color: var(--global-text-color-light);
     font-style: italic;
   }
+  /* ---------- home page name (same treatment as ryanxhr.github.io) ---------- */
+  @font-face {
+    font-family: "Source Sans 3";
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    src: url("{{ '/assets/fonts/source-sans-3-latin-300-normal.woff2' | relative_url }}") format("woff2");
+  }
+  .post-title.home-name {
+    font-family: "Source Sans 3", "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 42px;
+    line-height: 1.1;
+    letter-spacing: -0.4px;
+  }
+  .post-title.home-name .zh {
+    font-family: "Kaiti SC", STKaiti, KaiTi, serif;
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: var(--global-text-color-light);
+    margin-left: 4px;
+    white-space: nowrap;
+  }
+  /* ---------- news: fixed-height scrolling box ---------- */
+  .news-scroll {
+    max-height: 12.5rem;
+    overflow-y: auto;
+    border-top: 1px solid var(--global-divider-color);
+    border-bottom: 1px solid var(--global-divider-color);
+  }
+  .news th.news-date {
+    width: 6.5rem;
+    white-space: nowrap;
+    font-weight: 600;
+  }
   /* ---------- home page intro: text column beside the photo ---------- */
   .intro-row {
     display: flex;

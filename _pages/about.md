@@ -3,6 +3,8 @@ layout: about
 title: about
 permalink: /
 
+name_zh: 李硕哲
+
 profile:
   image: prof_pic.jpg
   image_circular: false
@@ -11,6 +13,7 @@ profile:
     <a href="mailto:shuozhe.li@utexas.edu">Email</a> /
     <a href="https://scholar.google.com/citations?user=EAth38AAAAAJ&amp;hl=en">Google Scholar</a> /
     <a href="https://github.com/ShuoZheLi">GitHub</a> /
+    <a href="https://x.com/ShuozheL">Twitter</a> /
     <a href="/cv/">CV</a>
 
 selected_papers: true # highlighted papers are those marked selected={true} in _bibliography/papers.bib
@@ -19,8 +22,7 @@ social: true
 
 announcements:
   enabled: true
-  scrollable: true
-  limit: 5
+  scrollable: true # all items in a fixed-height box that scrolls
 
 latest_posts:
   enabled: false
@@ -30,7 +32,7 @@ Hi! I am a Ph.D. student in Computer Science at The University of Texas at Austi
 [Prof. Amy Zhang](https://www.ece.utexas.edu/people/faculty/amy-zhang) and [Prof. Leqi Liu](https://leqiliu.github.io/)
 supported by Open Philanthropy and the Wesley W. Calhoun, Jr. Endowed Scholarship.
 
-I work on **reinforcement learning for large language models**: making LLM reasoning _capable_, _reliable_, and _efficient_.
+I work on **reinforcement learning for large language models**: making LLM reasoning _capable_, _reliable_, and _deployable_.
 
 <ul class="research-thrusts">
   <li><strong>Capability.</strong> How can we help models learn to solve harder problems (<a href="{{ '/publications/#zhou2025expo' | relative_url }}">ExPO</a>) and recover from misleading reasoning (<a href="{{ '/publications/#li2026gasp' | relative_url }}">GASP</a>)?</li>

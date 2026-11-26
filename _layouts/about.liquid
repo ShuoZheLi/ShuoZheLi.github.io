@@ -11,13 +11,9 @@ layout: default
 {% include pub_styles.liquid %}
 <div class="post">
   <header class="post-header">
-    <h1 class="post-title">
-      {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
-      {% else %}
-        {{ site.title }}
-      {% endif %}
+    <h1 class="post-title home-name">
+      {{ site.first_name }} {{ site.last_name }}
+      {% if page.name_zh %}<span class="zh" lang="zh">{{ page.name_zh }}</span>{% endif %}
     </h1>
     {% if page.subtitle %}<p class="desc">{{ page.subtitle }}</p>{% endif %}
   </header>

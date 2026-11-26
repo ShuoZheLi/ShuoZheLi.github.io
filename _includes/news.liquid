@@ -1,0 +1,27 @@
+{%- comment -%}
+  Local override of al_folio_core's news.liquid: dates are shown as "Mon YYYY", and on the
+  home page (include.limit) every item is listed inside a fixed-height box that scrolls.
+{%- endcomment -%}
+<div class="news">
+  {% if site.news != blank %}
+    <div class="table-responsive{% if include.limit and page.announcements.scrollable %} news-scroll{% endif %}">
+      <table class="table table-sm table-borderless">
+        {% assign news = site.news | reverse %}
+        {% for item in news %}
+          <tr>
+            <th scope="row" class="news-date">{{ item.date | date: '%b %Y' }}</th>
+            <td>
+              {% if item.inline %}
+                {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+              {% else %}
+                <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+              {% endif %}
+            </td>
+          </tr>
+        {% endfor %}
+      </table>
+    </div>
+  {% else %}
+    <p>No news so far...</p>
+  {% endif %}
+</div>

@@ -112,7 +112,7 @@ cv:
         publisher: NeurIPS 2025
         releaseDate: 2025
         url: https://arxiv.org/abs/2507.02834
-        summary: "Ruiyang Zhou\\*, **Shuozhe Li\\***, Amy Zhang, Leqi Liu\\*"
+        summary: "**Shuozhe Li\\***, Ruiyang Zhou\\*, Amy Zhang, Leqi Liu\\*"
       - title: "StitchLLM: Serving LLMs, One Block at a Time"
         publisher: ACL 2025
         releaseDate: 2025

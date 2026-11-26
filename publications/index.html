@@ -191,6 +191,32 @@
     color: var(--global-text-color-light);
     font-style: italic;
   }
+  /* ---------- home page intro: text column beside the photo ---------- */
+  .intro-row {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+  .intro-text {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+  .intro-text p:last-child {
+    margin-bottom: 0;
+  }
+  .intro-photo {
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+  .intro-photo figure {
+    margin: 0.3rem 0 0 0;
+  }
+  .intro-photo img {
+    width: 100%;
+  }
+  .intro-links {
+    margin-top: 0.9rem;
+  }
   /* ---------- home page sections ---------- */
   .home-section-title {
     margin-top: 2.2rem;
@@ -208,6 +234,15 @@
     margin-bottom: 0.3rem;
   }
   @media (max-width: 640px) {
+    .intro-row {
+      flex-direction: column-reverse;
+      gap: 1rem;
+    }
+    .intro-photo {
+      flex: none;
+      max-width: 100%;
+      width: 100%;
+    }
     .pub-entry {
       flex-direction: column;
       align-items: stretch;
@@ -378,7 +413,7 @@
     fromHash();
     window.addEventListener("hashchange", fromHash);
   })();
-</script> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Shuozhe Li. Built with <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="external nofollow noopener">al-folio</a>. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Last updated: November 25, 2026. </div> </footer> <script>
+</script> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Shuozhe Li. Built with <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="external nofollow noopener">al-folio</a>. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Last updated: November 26, 2026. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
   };

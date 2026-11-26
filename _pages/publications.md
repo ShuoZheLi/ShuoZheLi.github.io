@@ -14,7 +14,7 @@ nav_order: 2
 {% include pub_filter_bar.liquid %}
 
 <p class="pub-legend">
-  Highlighted papers have a tinted background and an animation of their core method (click an animation to open it full size).
+  Highlighted papers have a tinted background. Each animation sketches the core method of the paper (click it to open full size).
   * denotes equal contribution. Also see <a href="https://scholar.google.com/citations?user=EAth38AAAAAJ&amp;hl=en">Google Scholar</a>.
 </p>
 

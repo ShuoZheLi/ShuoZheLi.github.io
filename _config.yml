@@ -8,8 +8,8 @@ middle_name:
 last_name: Li
 contact_note: >
   Email is the best way to reach me.
-description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Shuozhe Li (李硕哲) is a Ph.D. student in Computer Science at UT Austin, advised by Amy Zhang and Leqi Liu, working on reinforcement learning for LLM reasoning.
+# one line, no trailing newline: the theme pastes this into a JSON-LD string, where a newline is invalid
+description: "Shuozhe Li (李硕哲) is a Ph.D. student in Computer Science at UT Austin, advised by Amy Zhang and Leqi Liu, working on reinforcement learning for LLM reasoning."
 footer_text: >
   Built with <a href="https://github.com/alshedivat/al-folio" target="_blank">al-folio</a>.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.

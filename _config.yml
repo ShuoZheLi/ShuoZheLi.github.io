@@ -9,11 +9,11 @@ last_name: Li
 contact_note: >
   Email is the best way to reach me.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Shuozhe Li is a Ph.D. student in Computer Science at The University of Texas at Austin working on reinforcement learning for capable, reliable, and efficient reasoning in large language models.
+  Shuozhe Li (李硕哲) is a Ph.D. student in Computer Science at UT Austin, advised by Amy Zhang and Leqi Liu, working on reinforcement learning for LLM reasoning.
 footer_text: >
   Built with <a href="https://github.com/alshedivat/al-folio" target="_blank">al-folio</a>.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: Shuozhe Li, reinforcement learning, large language models, LLM reasoning, RLHF, offline RL, UT Austin
+keywords: Shuozhe Li, 李硕哲, UT Austin, reinforcement learning, large language models, LLM reasoning, RLHF, offline RL
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 future: true # publish future-dated news items (e.g. upcoming talks)
 icon: favicon.png # square crop of the robot-judge illustration; also used as the iOS home-screen icon

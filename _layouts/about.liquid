@@ -10,6 +10,32 @@ layout: default
   from _data/service.yml after the publications.
 {%- endcomment -%}
 {% include pub_styles.liquid %}
+{%- comment -%} Person / profile structured data, so search engines tie this page to the name {%- endcomment -%}
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "url": {{ site.url | append: site.baseurl | append: '/' | jsonify }},
+    "mainEntity": {
+      "@type": "Person",
+      "name": {{ site.first_name | append: ' ' | append: site.last_name | jsonify }},
+      "alternateName": {{ page.name_zh | jsonify }},
+      "url": {{ site.url | append: site.baseurl | append: '/' | jsonify }},
+      "image": {{ page.profile.image | prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url | jsonify }},
+      "email": {{ site.data.socials.email | prepend: 'mailto:' | jsonify }},
+      "jobTitle": "Ph.D. Student in Computer Science",
+      "affiliation": { "@type": "CollegeOrUniversity", "name": "The University of Texas at Austin", "url": "https://www.utexas.edu/" },
+      "alumniOf": { "@type": "CollegeOrUniversity", "name": "The University of Texas at Austin" },
+      "knowsAbout": ["Reinforcement learning", "Large language models", "LLM reasoning", "Offline reinforcement learning", "Robot learning"],
+      "sameAs": [
+        "https://scholar.google.com/citations?user=EAth38AAAAAJ",
+        "https://github.com/ShuoZheLi",
+        "https://x.com/ShuozheL",
+        "https://dblp.org/pid/296/3004"
+      ]
+    }
+  }
+</script>
 <div class="post">
   <div class="intro-grid">
     <header class="post-header intro-name">

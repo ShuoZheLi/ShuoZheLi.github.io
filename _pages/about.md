@@ -51,4 +51,4 @@ Before focusing on LLMs, I worked on offline RL ([Iterative Dual-RL]({{ '/public
 ([Robot Air Hockey]({{ '/publications/#chuck2024airhockey' | relative_url }})), and navigation ([DynaBARN]({{ '/publications/#nair2022dynabarn' | relative_url }}))
 in robot learning. I have also worked on financial time series forecasting
 ([WaveLSFormer]({{ '/publications/#li2026wavelsformer' | relative_url }}), [Stockformer]({{ '/publications/#li2025stockformer' | relative_url }})).
-Before Ph.D., I worked on wireless sensing and mobile systems with [Prof. Lili Qiu](https://www.cs.utexas.edu/~lili/).
+Before Ph.D., I worked on wireless sensing ([RFID]({{ '/publications/#pradhan2021rfid' | relative_url }})) and mobile systems ([VIGOR]({{ '/publications/#he2024vigor' | relative_url }})) with [Prof. Lili Qiu](https://www.cs.utexas.edu/~lili/).
